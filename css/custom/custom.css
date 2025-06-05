@@ -1,0 +1,131 @@
+/* -- main container */
+.main-container {
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* -- css banner -- */
+.top-infobox {
+    position: relative;
+    overflow: visible;
+}
+
+.logo {
+    position: absolute;
+    z-index: 10;
+    left: 15%;
+    top: 4%;
+    width: 148px;
+    height: 97px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+
+.inner {
+    position: absolute !important;
+    bottom: 22%;
+    z-index: 10;
+    flex-direction: column;
+    gap: 15px;
+    left: 14%;
+}
+
+.pos_r {
+    position: absolute;
+    background-color: rgba(0, 105, 52, 0.7);
+    padding: 40px;
+    width: 487px;
+}
+
+.fs_23 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--color-white);
+    font-size: calc(var(--font-size-base) + 7px) !important;
+}
+
+.text {
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+}
+
+.hover {}
+
+.slidebox {
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slidebox img {
+    aspect-ratio: 1920 / 937;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* -- css advertisement */
+.advertisement-image {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 50px 0px 10px 0px;
+    margin-bottom: 20px;
+}
+
+.advertisement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.advertisement-image div {
+    aspect-ratio: 16 / 10;
+}
+
+/* css place advertisement */
+.place-adv__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.place-adv__btn {
+    height: fit-content;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    color: var(--color-white);
+    background-color: var(--primary-color);
+}
+
+.place-adv__btn p {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.place-adv__btn img {
+    filter: brightness(0) invert(1);
+    width: 12px;
+    height: 12px;
+}
+
+/* Css are you know */
+
+.container-small {}
+
+.areYouKnow__leaf {}
+
+.areYouKnow__container {}
+
+.areYouKnow__content {}
+
+.areYouKnow__title {}
+
+.areYouKnow__info {}
+
+.place-adv__btn {}
+
+.areYouKnow__image {}
