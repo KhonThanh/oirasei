@@ -1,40 +1,124 @@
-.text-white { color: var(--color-white); }
-.text-black { color: var(--color-black); }
-.text-gray { color: var(--color-gray); }
-.text-primary { color: var(--primary-color); }
-.text-green { color: var(--color-green); }
+.text-white {
+  color: var(--color-white);
+}
 
-.bg-white { background-color: var(--color-white); }
-.bg-primary { background-color: var(--primary-color); }
-.bg-gray { background-color: var(--color-gray); }
+.text-black {
+  color: var(--color-black);
+}
 
-.rounded { border-radius: 10px; }
-.rounded-full { border-radius: 999px; }
-.shadow { box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1); }
+.text-gray {
+  color: var(--color-gray);
+}
 
-.flex { display: flex; }
-.grid { display: grid; }
-.center { justify-content: center; align-items: center; }
+.text-primary {
+  color: var(--primary-color);
+}
 
-.uppercase { text-transform: uppercase; }
-.bold { font-weight: bold; }
-.italic { font-style: italic; }
+.text-green {
+  color: var(--color-green);
+}
 
-.text-center { text-align: center; }
+.bg-white {
+  background-color: var(--color-white);
+}
 
-.container-small {
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-gray {
+  background-color: var(--color-gray);
+}
+
+.bg-light-blue {
+  background-color: var(--color-light-blue);
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.rounded-full {
+  border-radius: 999px;
+}
+
+.shadow {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  justify-content: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.container-small-padding {
   max-width: 1200px;
   margin: 0 auto;
   width: calc(100% - 40px);
 }
 
-.container-larger {
+.container-small {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-larger-padding {
   max-width: 1920px;
   margin: 0 auto;
   width: calc(100% - 20px);
 }
 
-.container-banner{
+.container-larger {
   max-width: 1920px;
   margin: 0 auto;
+}
+
+.container-medium-padding {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: calc(100% - 20px);
+}
+
+.container-medium {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+.main-container {
+  max-width: 1920px;
+  position: relative;
+  overflow: hidden;
 }

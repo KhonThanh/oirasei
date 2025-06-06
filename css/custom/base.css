@@ -1,6 +1,7 @@
 :root {
   --primary-color: #006934;
   --background-color: #ffffff;
+  --color-light-blue: #aaddf8;
   --color-white: #fff;
   --color-black: #252525;
   --color-green: #42b880;
@@ -28,12 +29,8 @@ header{
 body {
   font-family: var(--font-name);
   background-color: var(--background-color);
-  overflow-x: hidden;
 }
 
-section {
-  width: 100vw;
-}
 
 ul {
   list-style: none;
