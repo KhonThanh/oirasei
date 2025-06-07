@@ -6,7 +6,10 @@
   --color-black: #252525;
   --color-green: #42b880;
   --color-gray: #575757;
+  --color-light-gray: #f5f5f4;
   --font-size-base: 16px;
+  --banner-adv: url(/img/banner/top-project.jpg);
+  --banner-con: url(/img/banner/concept_bn.jpg);
   --font-name:'Noto Sans JP', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif;
 }
 

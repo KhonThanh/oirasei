@@ -166,23 +166,18 @@
 
 /* -- css top container -- */
 
-.top-project__content img {
-    aspect-ratio: 1920 / 655;
-    width: 160%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-}
-
 .top-project__container {
     position: relative;
+    background-image: var(--banner-adv);
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1920 / 655;
+    width: 100%;
+    margin: 50px 0px;
 }
 
 .top-project__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 120px 0px;
     gap: 50px;
 }
 
@@ -202,6 +197,7 @@
     font-size: var(--font-size-base);
 }
 
+/* -- css scenic */
 .scenic__btn,
 .top-project__btn {
     background-color: var(--primary-color);
@@ -212,10 +208,9 @@
 
 .scenic__btn {
     border-radius: 50px;
-    position: absolute;
-    z-index: 3;
-    top: 64%;
-    left: 34%;
+    width: fit-content;
+    height: fit-content;
+    margin:120px 0px 108px -17%;
 }
 
 .scenic__btn img,
@@ -233,8 +228,11 @@
     font-size: calc(var(--font-size-base) + 4px);
 }
 
-/* -- css scenic -- */
-
-.scenic-container {
-    position: relative;
+.scenic-container{
+    background-image: var(--banner-con);
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1400 / 473;
+    width: 100%;
+    margin: 50px 0px;
 }
