@@ -1,3 +1,98 @@
+/* ===== icon animation bars ===== */
+.icon-bar___position {
+    position: absolute !important;
+    right: 30px;
+    top: 30px;
+    z-index: 5;
+}
+
+.icon-bar {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.icon-bar span {
+    display: block;
+    height: 3px;
+    background: var(--color-white);
+    margin: 5px auto;
+    width: 60%;
+}
+
+.disp_n {
+    background-color: transparent !important;
+}
+
+.icon-bar .disp_n {
+    position: absolute;
+    top: 49%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    font-size: 47px;
+    color: var(--color-white);
+    display: none;
+    pointer-events: none;
+    line-height: 1;
+    height: 61px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Animations */
+@keyframes rotate-cw {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes rotate-ccw {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-720deg);
+    }
+}
+
+@keyframes shrink-out {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+/* Class add by JS */
+.animate .nth-1 {
+    animation: rotate-cw 0.6s ease forwards;
+}
+
+.animate .nth-2 {
+    animation: shrink-out 0.6s ease forwards;
+}
+
+.animate .nth-3 {
+    animation: rotate-ccw 0.6s ease forwards;
+}
+
+/* -- css header menu */
+.header-menu {
+    justify-content: right;
+    padding: 20px 40px 20px 0;
+    position: fixed;
+    display: none
+}
+
 /* -- main container */
 .main-container {
     align-items: center;
@@ -537,4 +632,15 @@
 .footer-list a {
     font-size: var(--font-size-base);
     color: var(--color-white);
+}
+
+.hidden-section {
+	opacity: 0;
+	transform: translateY(40px);
+	transition: opacity 1s ease, transform 1s ease;
+}
+
+.show-up {
+	opacity: 1;
+	transform: translateY(0);
 }

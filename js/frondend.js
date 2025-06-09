@@ -115,3 +115,95 @@ $(document).ready(function () {
     console.log("can't find .slide-adv");
   }
 });
+
+
+//js icon bars
+
+$(document).ready(function () {
+  const $iconBar = $('.icon-bar');
+  const $nth1 = $iconBar.find('.nth-1');
+  const $nth2 = $iconBar.find('.nth-2');
+  const $nth3 = $iconBar.find('.nth-3');
+  const $closeX = $iconBar.find('.disp_n');
+
+  let isActive = false;
+
+  $iconBar.on('click', function () {
+    if (!isActive) {
+      $iconBar.addClass('animate');
+
+      setTimeout(() => {
+        $nth1.hide();
+        $nth2.hide();
+        $nth3.hide();
+
+        $closeX.css({
+          display: 'block',
+          opacity: 0
+        });
+
+        setTimeout(() => {
+          $closeX.css('opacity', 1);
+        }, 10);
+
+        isActive = true;
+      }, 600);
+    } else {
+      $iconBar.removeClass('animate');
+
+      $closeX.css({
+        opacity: 0
+      });
+
+      setTimeout(() => {
+        $closeX.css('display', 'none');
+
+        $nth1.show();
+        $nth2.show();
+        $nth3.show();
+
+        isActive = false;
+      }, 300); 
+    }
+  });
+});
+
+// js fade animation
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section, footer");
+  if (!sections.length) return;          
+
+  sections.forEach(sec => sec.classList.add("hidden-section"));
+
+  let revealIndex = 0;           
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+
+     
+        el.style.transitionDelay = `${revealIndex * 150}ms`;
+        revealIndex += 1;
+
+        el.classList.add("show-up");
+        observer.unobserve(el);           
+      }
+    });
+  }, {
+    threshold: 0.25,                       
+    rootMargin: "0px 0px -20% 0px"        
+  });
+
+  sections.forEach(sec => observer.observe(sec));
+
+  
+  const firstVisible = Array.from(sections).find(
+    s => s.getBoundingClientRect().top >= 0 &&
+         s.getBoundingClientRect().bottom <= window.innerHeight * 1.2 // linh hoạt
+  );
+  if (firstVisible) {
+    firstVisible.classList.add("show-up");
+    observer.unobserve(firstVisible);
+  }
+});
