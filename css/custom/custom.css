@@ -1,6 +1,6 @@
 /* -- main container */
 .main-container {
-    flex-direction: column;
+    align-items: center;
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
@@ -132,6 +132,12 @@
     gap: 58px;
 }
 
+.areYouKnow__image img {
+    aspect-ratio: 9 / 13;
+    width: 100%;
+    height: auto;
+}
+
 .areYouKnow__content {}
 
 .areYouKnow__title {
@@ -210,7 +216,7 @@
     border-radius: 50px;
     width: fit-content;
     height: fit-content;
-    margin:120px 0px 108px -17%;
+    margin: 120px 0px 108px -17%;
 }
 
 .scenic__btn img,
@@ -228,11 +234,307 @@
     font-size: calc(var(--font-size-base) + 4px);
 }
 
-.scenic-container{
+.scenic-container {
     background-image: var(--banner-con);
     background-size: cover;
     background-position: center;
     aspect-ratio: 1400 / 473;
     width: 100%;
     margin: 50px 0px;
+}
+
+/* -- css event --*/
+
+.event-container {
+    gap: 10px;
+}
+
+.event-leaf {
+    justify-content: right;
+    margin-right: 25%;
+}
+
+.event-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 23%;
+}
+
+.event-img img {
+    transform: scale(1.6);
+    transform-origin: right top;
+}
+
+.event-img,
+.event-img img {
+    aspect-ratio: 103 / 52;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.event-info {
+    gap: 40px;
+}
+
+.event-info>p {
+    line-height: 2;
+    font-size: var(--font-size-base);
+    color: var(--primary-color);
+}
+
+.event-title {
+    font-size: calc(var(--font-size-base) + 16px);
+    font-weight: bold;
+    color: var(--color-black);
+}
+
+
+
+/* -- css pamphlet -- */
+.pamphlet {
+    border: 1px solid var(--primary-color);
+    grid-template-columns: 30% 1fr;
+    padding: 50px 120px 50px 100px;
+    align-items: center;
+}
+
+.pamphlet-title {
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: calc(var(--font-size-base) + 14px);
+}
+
+.pamphlet-img,
+.pamphlet-img img {
+    aspect-ratio: 1920 / 937;
+    width: 100%;
+    height: auto;
+}
+
+/* -- css img flex -- */
+.image-flex {
+    padding: 30px 0 80px;
+    gap: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.image-flex img {
+    aspect-ratio: 185 / 123;
+    object-fit: cover;
+    object-position: center;
+    width: calc(100% / 3 - 20px);
+    height: auto;
+}
+
+.image-flex__container {
+    margin: 50px 0px;
+}
+
+.image-flex__title {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* -- css youtube --  */
+.youtube-container {
+    padding: 50px 0px;
+    gap: 50px;
+}
+
+.youtube-title div {
+    height: 100%;
+}
+
+.youtube-title span {
+    font-size: calc(var(--font-size-base) + 14px);
+    font-weight: bold;
+    color: var(--color-black);
+    height: 100%;
+}
+
+.youtube-title {
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.leaf-first {
+    aspect-ratio: 546 / 382;
+    width: 273px;
+    height: auto;
+}
+
+.leaf-second {
+    aspect-ratio: 76 / 39;
+    width: auto;
+    height: 117px;
+}
+
+.youtube-link {
+    margin-bottom: 50px;
+}
+
+.youtube-link img {
+    aspect-ratio: 35 / 13;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* -- css slide img adv -- */
+
+.slide-adv img {
+    aspect-ratio: 21 / 5;
+    width: 100%;
+    height: auto;
+}
+
+.slide-adv {
+    padding: 100px 0 50px;
+}
+
+/* -- css box -- */
+
+.box-container__first,
+.box-container__second {
+    padding: 50px 0px;
+}
+
+.box-container__first a,
+.box-container__second a {
+    position: relative;
+    display: inline-block;
+    transition: filter 0.3s ease;
+}
+
+.box-container__first a::after,
+.box-container__second a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.box-container__first a:hover::after,
+.box-container__second a:hover::after {
+    opacity: 1;
+}
+
+.box-container__first {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box-container__first img {
+    width: 58px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+}
+
+.box-container__first p {
+    color: var(--color-white);
+    font-size: calc(var(--font-size-base) + 14px);
+    font-weight: bold;
+}
+
+.box-container__second {
+    gap: 50px;
+    margin-bottom: 73.5px;
+}
+
+.box-container__second a {
+    width: calc(100% / 3);
+}
+
+.box-container__second img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
+}
+
+.アクセス,
+.お問い合わせ {
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+    aspect-ratio: 960 / 371;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.アクセス {
+    background-image: url(/img/banner/top-access.jpg);
+}
+
+.お問い合わせ {
+    background-image: url(/img/banner/top-contact.jpg);
+}
+
+
+/* -- css banner rel -- */
+.relbanner {
+    padding: 150px 0px;
+}
+
+.rel-container {
+    gap: 30px;
+}
+
+.rel-banner img {
+    aspect-ratio: 1000 / 274;
+    width: 100%;
+    height: auto;
+}
+
+/* -- css footer -- */
+.footer-container {
+    padding: 40px 0px;
+    gap: 40px;
+    position: relative;
+}
+
+.footer-logo img {
+    aspect-ratio: 200 / 124;
+    width: 200px;
+    height: auto;
+}
+
+.pagetop {
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    top: -64px
+}
+
+.pagetop img {
+    aspect-ratio: 288 / 128;
+    width: 144px;
+    height: auto;
+}
+
+.footer-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.footer-list {
+    gap: 20px;
+}
+
+.footer-copyRight p,
+.footer-list a {
+    font-size: var(--font-size-base);
+    color: var(--color-white);
 }

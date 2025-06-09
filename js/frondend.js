@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// js banner chỗ trang chủ
+// js banner homepage
 $(document).ready(function () {
   const $banner = $(".slidebox");
 
@@ -78,9 +78,40 @@ $(document).ready(function () {
       autoplay: true,
       arrows: false,
       touchMove: false,
-      fade:true,
+      fade: true,
     });
   } else {
-    console.log("Không tìm thấy .slide-cmt – Slick không khởi tạo.");
+    console.log("can't find .slidebox.");
+  }
+});
+
+// js banner adv
+$(document).ready(function () {
+  const $banner = $(".slide-adv");
+
+  if ($banner.length) {
+    const $images = $banner.children("div");
+    const currentCount = $images.length;
+
+    if (currentCount < 2) {
+      const clonesNeeded = 3 - currentCount;
+
+      for (let i = 0; i < clonesNeeded; i++) {
+        const $clone = $images.eq(0).clone();
+        $banner.append($clone);
+      }
+    }
+    $banner.slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      speed: 2000,
+      dots: false,
+      autoplay: true,
+      arrows: false,
+      touchMove: false,
+    });
+  } else {
+    console.log("can't find .slide-adv");
   }
 });
