@@ -207,3 +207,14 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.unobserve(firstVisible);
   }
 });
+
+//js menu
+function toggleMenu() {
+  const menu = document.getElementById("mainMenu");
+
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+  } else {
+    menu.classList.add("active");
+  }
+}

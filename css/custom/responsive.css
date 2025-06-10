@@ -1,0 +1,11 @@
+@media (max-width: 1920px) {
+
+    .logo,
+    .inner {
+        left: 30px;
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 1157px) {
+   
+}

@@ -1,10 +1,101 @@
-/* ===== icon animation bars ===== */
-.icon-bar___position {
-    position: absolute !important;
-    right: 30px;
-    top: 30px;
-    z-index: 5;
+/* ===== css menu container ===== */
+
+.site-header {
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    width: 100%;
 }
+
+.site-header__wrapper {
+    justify-content: right;
+    padding: 30px 30px;
+}
+
+/* ===== custom menu ===== */
+
+.menu-container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    padding: 120px 30px 30px;
+    max-width: 350px;
+
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: transform 4ms ease-in-out, opacity 4ms ease-in-out, visibility 4ms ease-in-out;
+}
+
+.menu-container.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-list {
+    gap: 20px;
+}
+
+.menu-list a {
+    color: var(--color-white);
+    font-size: var(--font-size-base);
+}
+
+.lang-container {
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.lang-select {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px 16px;
+    width: 201px;
+}
+
+.option-exception {
+    width: 100%;
+    text-align: center ;
+}
+
+.lang-select>option {
+    color: var(--color-black);
+    font-size: 16px;
+    max-width: 201px;
+    width: 100%;
+    text-align: left;
+    text-align-last: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+}
+
+
+/* Optional: hover/focus */
+.lang-select:hover,
+.lang-select:focus {
+    border-color: #ddd;
+    outline: none;
+}
+
+/* ===== icon animation bars ===== */
 
 .icon-bar {
     width: 55px;
@@ -99,12 +190,14 @@
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 /* -- css header */
 
 .custom-header {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
 }
@@ -122,7 +215,7 @@
     height: 97px;
     display: block;
     top: 30px;
-    left: 30px;
+    left: 290px;
 }
 
 .logo img {
@@ -132,12 +225,12 @@
 
 
 .inner {
-    position: absolute !important;
-    top: 33vh;
+    position: absolute;
     z-index: 10;
     flex-direction: column;
     gap: 15px;
-    left: 0%;
+    left: 290px;
+    bottom: 14vh;
 }
 
 .pos_r {
@@ -225,6 +318,13 @@
 .areYouKnow__container {
     grid-template-columns: 1fr 60%;
     gap: 58px;
+}
+
+.areYouKnow__leaf img {
+    aspect-ratio: 447 / 252;
+    width: 100%;
+    height: auto;
+    max-width: 223px;
 }
 
 .areYouKnow__image img {
@@ -349,6 +449,13 @@
     margin-right: 25%;
 }
 
+.event-leaf img {
+    max-width: 231px;
+    aspect-ratio: 463 / 284;
+    height: auto;
+    width: 100%;
+}
+
 .event-content {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -436,6 +543,8 @@
 
 /* -- css youtube --  */
 .youtube-container {
+    max-width: 1409px;
+    width: 100%;
     padding: 50px 0px;
     gap: 50px;
 }
@@ -570,11 +679,11 @@
 }
 
 .アクセス {
-    background-image: url(/img/banner/top-access.jpg);
+    background-image: url(/img/banner/top-access.webp);
 }
 
 .お問い合わせ {
-    background-image: url(/img/banner/top-contact.jpg);
+    background-image: url(/img/banner/top-contact.webp);
 }
 
 
@@ -635,12 +744,12 @@
 }
 
 .hidden-section {
-	opacity: 0;
-	transform: translateY(40px);
-	transition: opacity 1s ease, transform 1s ease;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .show-up {
-	opacity: 1;
-	transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }

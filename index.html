@@ -18,7 +18,48 @@
             <span class="disp_n">×</span>
         </div>
     </header>
-    <main class="flex flex-col  ">
+    <section class="site-header">
+        <div class="flex site-header__wrapper container-larger">
+            <div class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+                <span class="nth-1"></span>
+                <span class="nth-2"></span>
+                <span class="nth-3"></span>
+                <span class="disp_n">×</span>
+            </div>
+        </div>
+    </section>
+    <section id="mainMenu" class="menu-container">
+        <div class="flex lang-container" >
+            <select id="langSelect" class="lang-select">
+                <option value="" class="" disabled selected hidden>
+                    <p class="option-exception">Language</p>    
+                </option>
+                <option value="ja">日本語</option>
+                <option value="KR">한국어</option>
+                <option value="en">English</option>
+                <option value="cn">中文(繁体)</option>
+                <option value="cn">中文(簡体)</option>
+            </select>
+        </div>
+        <ul class="flex flex-col menu-list">
+            <li><a href="./index.html">トップページ</a></li>
+            <li><a href="/">プロジェクトの概要</a></li>
+            <li><a href="/">マイカー交通規制の詳細</a></li>
+            <li><a href="/">シャトルバス運行の詳細</a></li>
+            <li><a href="/">全体構想についての概要</a></li>
+            <li><a href="/">奥入瀬渓流の歩き方</a></li>
+            <li><a href="/">これまでの活動内容</a></li>
+            <li><a href="/">プロジェクトチーム員</a></li>
+            <li><a href="/">アクセス</a></li>
+            <li><a href="/">お問い合わせ</a></li>
+            <li><a href="/">リンク集</a></li>
+            <li><a href="/">ご利用案内</a></li>
+            <li><a href="/">個人情報の取り扱いについて</a></li>
+            <li><a href="/">著作権・リンク</a></li>
+        </ul>
+    </section>
+
+    <main class="flex flex-col ">
         <section class="main-container">
             <div class="container-medium-padding custom-header">
                 <a href="/index.html" class="logo">
@@ -38,44 +79,38 @@
             <div class="container-small top-infobox">
                 <div class="slidebox">
                     <div>
-                        <img src="./img/banner/slide_1.jpg" alt="" />
+                        <img src="./img/banner/slide_1.webp" alt="" />
                     </div>
                     <div>
-                        <img src="./img/banner/slide_2.jpg" alt="" />
+                        <img src="./img/banner/slide_2.webp" alt="" />
                     </div>
                     <div>
-                        <img src="./img/banner/slide_3.jpg" alt="" />
+                        <img src="./img/banner/slide_3.webp" alt="" />
                     </div>
                     <div>
-                        <img src="./img/banner/slide_4.jpg" alt="" />
+                        <img src="./img/banner/slide_4.webp" alt="" />
                     </div>
                     <div>
-                        <img src="./img/banner/slide_5_2024.jpg" alt="" />
+                        <img src="./img/banner/slide_5_2024.webp" alt="" />
                     </div>
                 </div>
-            </div>
-            <div class="flex flex-col center icon-bar icon-bar___position">
-                <span class="nth-1"></span>
-                <span class="nth-2"></span>
-                <span class="nth-3"></span>
-                <span class="disp_n">×</span>
             </div>
         </section>
         <section class="grid container-larger-padding advertisement-image ">
             <div class="flex center">
-                <img src="./img/advertisement/PictureHome1.png" alt="">
+                <img src="./img/advertisement/PictureHome1.webp" alt="">
             </div>
             <div class="flex center">
-                <img src="./img/advertisement/PictureHome2new.jpg" alt="">
+                <img src="./img/advertisement/PictureHome2new.webp" alt="">
             </div>
             <div class="flex center">
-                <img src="./img/advertisement/PictureHome4.jpg" alt="">
+                <img src="./img/advertisement/PictureHome4.webp" alt="">
             </div>
             <div class="flex center">
-                <img src="./img/advertisement/PictureHome3.jpg" alt="">
+                <img src="./img/advertisement/PictureHome3.webp" alt="">
             </div>
             <div class="flex center">
-                <img src="./img/advertisement/PictureHome5.png" alt="">
+                <img src="./img/advertisement/PictureHome5.webp" alt="">
             </div>
         </section>
         <section class="flex align-center container-small-padding place-adv__container">
@@ -94,7 +129,7 @@
         </section>
         <section class="flex flex-col areYouKnow-padding container-small-padding ">
             <div class="flex areYouKnow__leaf">
-                <img src="./img/icon/leaf-1.png" alt="">
+                <img src="./img/icon/leaf-1.webp" alt="">
             </div>
             <div class="grid areYouKnow__container">
                 <div class=" flex flex-col areYouKnow__content">
@@ -117,8 +152,8 @@
                     </a>
                 </div>
                 <div class="flex flex-col areYouKnow__image">
-                    <img src="./img/advertisement/oirase-gorge.png" alt="">
-                    <img src="./img/advertisement/04_資料6_大型バスのMMについて - コピー.jpg" alt="">
+                    <img src="./img/advertisement/oirase-gorge.webp" alt="">
+                    <img src="./img/advertisement/04_資料6_大型バスのMMについて - コピー.webp" alt="">
                 </div>
             </div>
         </section>
@@ -148,11 +183,11 @@
         </section>
         <section class="event-container flex flex-col container-small-padding">
             <div class="flex event-leaf">
-                <img src="./img/icon/leaf-2.png" alt="">
+                <img src="./img/icon/leaf-2.webp" alt="">
             </div>
             <div class="grid event-content">
                 <div class="event-img">
-                    <img src="./img/banner/top-2.jpg" alt="">
+                    <img src="./img/banner/top-2.webp" alt="">
                 </div>
                 <div class="flex flex-col event-info">
                     <span class="event-title">イベント</span>
@@ -175,90 +210,90 @@
                 <p>エコロードフェスタ <br> についての <br> パンフレットはこちら</p>
             </div>
             <div class="pamphlet-img">
-                <img src="./img/banner/slide_5_2024.jpg" alt="">
+                <img src="./img/banner/slide_5_2024.webp" alt="">
             </div>
         </section>
         <section class="flex center image-flex__container flex-col container-small-padding">
             <a class="image-flex__title" href="#">奥入瀬渓流における自動運転の取り組みについて</a>
             <div class="flex image-flex">
-                <img src="./img/banner/Picture1.jpg" alt="">
-                <img src="./img/banner/Picture2.jpg" alt="">
-                <img src="./img/banner/Picture3.jpg" alt="">
+                <img src="./img/banner/Picture1.webp" alt="">
+                <img src="./img/banner/Picture2.webp" alt="">
+                <img src="./img/banner/Picture3.webp" alt="">
             </div>
         </section>
-        <section class="flex center bg-light-gray">
+        <section class="container-larger  flex center bg-light-gray">
             <div class="youtube-container flex flex-col">
                 <div class="flex youtube-title">
-                    <img class="leaf-first" src="./img/icon/top-leaf-1.png" alt="">
+                    <img class="leaf-first" src="./img/icon/top-leaf-1.webp" alt="">
                     <div>
                         <span>Youtube Video</span>
                     </div>
-                    <img class="leaf-second" src="./img/icon/top-leaf-2.png" alt="">
+                    <img class="leaf-second" src="./img/icon/top-leaf-2.webp" alt="">
                 </div>
                 <a class="youtube-link">
-                    <img src="./img/banner/youtube.jpg" alt="">
+                    <img src="./img/banner/youtube.webp" alt="">
                 </a>
             </div>
         </section>
         <section class="slide-adv container-medium-padding">
             <div>
                 <a href="#" title="slide advertisement">
-                    <img src="./img/banner/banner-1.png" alt="">
+                    <img src="./img/banner/banner-1.webp" alt="">
                 </a>
             </div>
             <div>
                 <a href="#" title="slide advertisement">
-                    <img src="./img/banner/banner-2.png" alt="">
+                    <img src="./img/banner/banner-2.webp" alt="">
                 </a>
             </div>
             <div>
                 <a href="#" title="slide advertisement">
-                    <img src="./img/banner/banner-3.png" alt="">
+                    <img src="./img/banner/banner-3.webp" alt="">
                 </a>
             </div>
             <div>
                 <a href="#" title="slide advertisement">
-                    <img src="./img/banner/banner-4.png" alt="">
+                    <img src="./img/banner/banner-4.webp" alt="">
                 </a>
             </div>
             <div>
                 <a href="#" title="slide advertisement">
-                    <img src="./img/banner/banner-5.png" alt="">
+                    <img src="./img/banner/banner-5.webp" alt="">
                 </a>
             </div>
         </section>
         <section class="container-larger grid box-container__first">
             <a href="#">
                 <div class="flex center アクセス">
-                    <img src="./img/icon/access-icon.png" alt="">
+                    <img src="./img/icon/access-icon.webp" alt="">
                     <p>アクセス</p>
                 </div>
             </a>
             <a href="#">
                 <div class="flex center お問い合わせ">
-                    <img src="./img/icon/contact-icon.png" alt="">
+                    <img src="./img/icon/contact-icon.webp" alt="">
                     <p>お問い合わせ</p>
                 </div>
             </a>
         </section>
         <section class="container-medium-padding flex box-container__second">
             <a title="Box" href="#">
-                <img src="./img/banner/banner-7.png" alt="">
+                <img src="./img/banner/banner-7.webp" alt="">
             </a>
             <a title="Box" href="#">
-                <img src="./img/banner/banner-8.png" alt="">
+                <img src="./img/banner/banner-8.webp" alt="">
             </a>
             <a title="Box" href="#">
-                <img src="./img/banner/banner-9.png" alt="">
+                <img src="./img/banner/banner-9.webp" alt="">
             </a>
         </section>
         <section class="relbanner flex center container-larger-padding bg-light-gray">
             <div class="flex container-small-padding rel-container">
                 <a href="#" title="rel banner" class="rel-banner">
-                    <img src="./img/banner/bottom_banner-1.png" alt="">
+                    <img src="./img/banner/bottom_banner-1.webp" alt="">
                 </a>
                 <a href="#" title="rel banner" class="rel-banner">
-                    <img src="./img/banner/bottom_banner-2.png" alt="">
+                    <img src="./img/banner/bottom_banner-2.webp" alt="">
                 </a>
             </div>
         </section>
@@ -266,7 +301,7 @@
     <footer>
         <div class="bg-primary container-larger flex flex-col footer-container">
             <div class="flex align-center pagetop">
-                <img src="./img/icon/page_top.png" alt="">
+                <img src="./img/icon/page_top.webp" alt="">
             </div>
             <div class="flex align-center footer-logo">
                 <img src="./img/logo/logo.png" alt="">
