@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eco oirase</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body class="flex flex-col  align-center ">
+    <header data-include="/component/header.html" class=" header-menu">
+        <div class="flex flex-col center icon-bar" onclick="toggleMenu()">
+            <span class="nth-1"></span>
+            <span class="nth-2"></span>
+            <span class="nth-3"></span>
+            <span class="disp_n">×</span>
+        </div>
+    </header>
+    <section data-include="/component/siteheader.html" class="site-header">
+        <div class="flex site-header__wrapper container-larger">
+            <div class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+                <span class="nth-1"></span>
+                <span class="nth-2"></span>
+                <span class="nth-3"></span>
+                <span class="disp_n">×</span>
+            </div>
+        </div>
+    </section>
+    <section data-include="/component/menu.html" id="mainMenu" class="menu-container"></section>
+    <main class="flex flex-col ">
+        <section class="main-container">
+            <div class="container-medium-padding custom-header">
+                <a href="/index.html" class="logo">
+                    <img src="./img/logo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="container-small top-banner">
+                <img src="./img/banner/page-top.webp" alt="" />
+            </div>
+        </section>
+        <section class="flex flex-col container-exsmall-padding content">
+            <h1>個人情報の取り扱いについて</h1>
+            <div class="flex flex-col container-content">
+                <p>
+                    当サイトでは、個人情報の収集・利用・管理について、「
+                    <a href="#">青森県個人情報保護条例</a>
+                    」に基づき、次のとおり適切に取り扱います。
+                </p>
+            </div>
+            <div class="flex flex-col container-content">
+                <p>当サイト及びサイトに掲載されている文章、写真、イラスト、画像等の著作権は、奥入瀬十和田利活用協議会、またはコンテンツ提供者の方にあります。</p>
+                <p>これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。また、引用を行う際は適宜の方法により、必ず出所を明示して下さい。当サイトの内容の全部、または一部について、当協議会に無断で改変を行うことはできません。
+                </p>
+            </div>
+            <h2>個人情報とは</h2>
+            <div class="flex flex-col container-content">
+                <p>当サイトを通じて個人情報を収集する際は、利用者ご本人の意思による情報の提供（登録）を原則とします。</p>
+            </div>
+            <h2>個人情報の収集について</h2>
+            <div class="flex flex-col container-content">
+                <p>当サイトを通じて個人情報を収集する際は、利用者ご本人の意思による情報の提供（登録）を原則とします。</p>
+                <p>個人情報の収集にあたっては、その収集目的を明示いたします。</p>
+                <p>個人情報の収集は、明示した目的を達成するために必要な範囲内でこれを行います。</p>
+            </div>
+            <h2>個人情報の利用制限</h2>
+            <div class="flex flex-col container-content">
+                <p>皆様から提供（登録）いただいた個人情報は、あらかじめ明示した収集目的の範囲内で利用いたします。</p>
+                <p>個人情報の収集目的を越えた利用及び提供は、個人情報保護条例で定める場合を除き、一切いたしません。</p>
+            </div>
+            <h2>個人情報の管理</h2>
+            <div class="flex flex-col container-content">
+                <p>収集しました個人情報については、厳重に管理し、漏洩、不正流用、改ざん等の防止に適切な対策を講じます。</p>
+            </div>
+        </section>
+        <section data-include="component/relbanner.html"
+            class="relbanner flex center container-larger-padding bg-light-gray"></section>
+        <section class="container-exsmall-padding map-container">
+
+        </section>
+    </main>
+    <footer data-include="component/footer.html"></footer>
+    <!-- js slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/frondend.js"></script>
+    <script type="text/javascript" src="./js/backend.js"></script>
+</body>
+
+</html>

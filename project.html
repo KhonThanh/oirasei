@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eco oirase</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body class="flex flex-col  align-center ">
+    <header data-include="/component/header.html" class=" header-menu">
+        <div class="flex flex-col center icon-bar" onclick="toggleMenu()">
+            <span class="nth-1"></span>
+            <span class="nth-2"></span>
+            <span class="nth-3"></span>
+            <span class="disp_n">×</span>
+        </div>
+    </header>
+    <section data-include="/component/siteheader.html" class="site-header">
+        <div class="flex site-header__wrapper container-larger">
+            <div class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+                <span class="nth-1"></span>
+                <span class="nth-2"></span>
+                <span class="nth-3"></span>
+                <span class="disp_n">×</span>
+            </div>
+        </div>
+    </section>
+    <section data-include="/component/menu.html" id="mainMenu" class="menu-container"></section>
+    <main class="flex flex-col ">
+        <section class="main-container">
+            <div class="container-medium-padding custom-header">
+                <a href="/index.html" class="logo">
+                    <img src="./img/logo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="container-small top-banner">
+                <img src="./img/banner/projecttop.webp" alt="" />
+            </div>
+        </section>
+        <section class="flex flex-col container-exsmall-padding content">
+            <h1>奥入瀬渓流エコツーリズムプロジェクトの概要</h1>
+            <div class="flex flex-col container-content">
+                <p class="content__sp">奥入瀬渓流の自然環境保全のために<br>美しい清流とブナ林をゆっくり味わっていただくために</p>
+                <p>十和田八幡平国立公園『奥入瀬渓流』は、後世に残すべき貴重な自然環境や美しい風景を有しており、その保全が大切です。同時に、県内外から年間約200万人が訪れる青森県を代表する景勝地、観光地として、今後より一層の観光活性化が望まれています。</p>
+                <p>
+                    このため、『奥入瀬渓流』の自然環境保全に資する活動を官民一体となって推進することを趣旨として、産業観光・自然環境・行政の各機関で組織する
+                    <a href="#">奥入瀬渓流エコツーリズムプロジェクト実行委員会」[PDF:89KB]</a>
+                    では、平成20年から『奥入瀬渓流エコツーリズムプロジェクト』を展開することとしました。
+                </p>
+                <p>奥入瀬渓流エコツーリズムプロジェクトは、奥入瀬渓流の自然環境保全に資する活動や10月第5週に行うマイカー交通規制の取り組みをとおして、訪れる観光客や青森県民に自然環境保全の理解浸透・啓発を図り、もって当該地域の永続的な保全と、自然環境を活かした当該地域の地域振興・観光振興を図ることを目的としています。</p>
+                <p>官民協力し、一体となった活動を行うことで、奥入瀬渓流の自然価値の向上と、奥入瀬渓流本来の魅力を全国に発信する契機にしたいと考えています。</p>
+            </div>
+            <h2>趣旨</h2>
+            <ul class="content-list">
+                <li>「奥入瀬渓流の自然環境保全」に資する活動を官民一体となって推進すること。</li>
+            </ul>
+            <h2>目的</h2>
+            <ul class="content-list">
+                <li>訪れる観光客や青森県民に自然環境保全の理解浸透を図り、永続的な保全に努めること。</li>
+            </ul>
+            <ul class="content-list-number">
+                <li>奥入瀬渓流の自然環境保全に資する活動や10月第5週に行うマイカー交通規制の取り組みをとおして</li>
+                <li>自然環境を活かした当該地域の地域振興・観光振興を図ること。</li>
+            </ul>
+            <div class="flex content-attention">
+                <p>※</p>
+                <p>奥入瀬渓流マイカー交通規制は、「奥入瀬十和田利活用協議会」の審議を経て実施されます。</p>
+            </div>
+        </section>
+        <section data-include="component/relbanner.html"
+            class="relbanner flex center container-larger-padding bg-light-gray"></section>
+        <section class="container-exsmall-padding map-container">
+
+        </section>
+    </main>
+    <footer data-include="component/footer.html"></footer>
+    <!-- js slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/frondend.js"></script>
+    <script type="text/javascript" src="./js/backend.js"></script>
+</body>
+
+</html>

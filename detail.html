@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eco oirase</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body class="flex flex-col  align-center ">
+    <header data-include="/component/header.html" class=" header-menu">
+        <div class="flex flex-col center icon-bar" onclick="toggleMenu()">
+            <span class="nth-1"></span>
+            <span class="nth-2"></span>
+            <span class="nth-3"></span>
+            <span class="disp_n">×</span>
+        </div>
+    </header>
+    <section data-include="/component/siteheader.html" class="site-header">
+        <div class="flex site-header__wrapper container-larger">
+            <div class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+                <span class="nth-1"></span>
+                <span class="nth-2"></span>
+                <span class="nth-3"></span>
+                <span class="disp_n">×</span>
+            </div>
+        </div>
+    </section>
+    <section data-include="/component/menu.html" id="mainMenu" class="menu-container"></section>
+    <main class="flex flex-col ">
+        <section class="main-container">
+            <div class="container-medium-padding custom-header">
+                <a href="/index.html" class="logo">
+                    <img src="./img/logo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="container-small top-banner">
+                <img src="./img/banner/detail-top.webp" alt="" />
+            </div>
+        </section>
+        <section class="flex flex-col container-exsmall-padding content">
+            <h1>マイカー交通規制の詳細</h1>
+            <h2>マイカー交通規制の目的・背景</h2>
+            <div class="flex flex-col container-content">
+                <p>奥入瀬渓流は、わたしたちみんなの財産。<br>誰もが等しくその恩恵を受ける権利があります。</p>
+                <p>しかし、その反面、観光シーズンには車が殺到して、渋滞や環境への影響を引き起こすなどの様々な問題が生じています。また、渓流沿いの国道102号は、もともと地域の生活道路や産業道路としての機能を担っていますが、渓流を迂回する道路は、大型車のすれ違いが困難な状況となっています。
+                </p>
+                <p>これらの問題を解決するため、平成25年度より奥入瀬渓流を安全に迂回できる「青撫山バイパス」が事業化され、整備されることになりました</p>
+                <p>わたしたち奥入瀬十和田利活用協議会では、これまで「自然環境保全と渋滞解消」を目的に、マイカー交通規制の試行に取り組んできましたが、今後は、本格的な車両の乗り入れ規制を見据え、規制車種や規制拡大のため、毎年の試行を継続しながら、本取り組みを進展させてまいりますので、どうぞ皆様のご理解、ご協力をお願い致します
+                </p>
+            </div>
+            <div class="flex flex-col detail-container">
+                <p class="detail-title">奥入瀬渓流マイカー交通規制</p>
+                <div class="flex detail-stop">
+                    <img src="./img/icon/stop-1.webp" alt="" srcset="">
+                    <p>規制日時</p>
+                </div>
+                <div class="flex detail-content__first">
+                    <span>2024年</span>
+                    <span class="content-big">10</span>
+                    <span class="content-medium">月</span>
+                    <span class="content-big">21</span>
+                    <span class="content-medium">日(月)</span>
+                    <span>▶</span>
+                    <span class="content-big">25</span>
+                    <span class="content-medium">日(金)</span>
+                    <span class="content-medium">10:00 ~ 16:00</span>
+                    <span>まで</span>
+                </div>
+                <div class="flex detail-content__second">
+                    <span>2024年</span>
+                    <span class="content-big">10</span>
+                    <span class="content-medium">月</span>
+                    <span class="content-big">26</span>
+                    <span class="content-medium">日<span class="content-blue">(土)</span></span>
+                    <span>▶</span>
+                    <span class="content-big">21</span>
+                    <span class="content-medium">日<span class="content-red">(日)</span></span>
+                    <span class="content-medium">9:00 ~ 16:00</span>
+                    <span>まで</span>
+                </div>
+                <div class="flex flex-col panel-container">
+                    <div class="bg-red flex panel-container__title">
+                        <p>規制区間</p>
+                        <img src="./img/icon/num-1.webp" alt="">
+                    </div>
+                    <p class="panel-title">一般国道102号の《惣辺交差点から子ノ口交差点（約10km）区間》</p>
+                    <div class="flex arrow-one">
+                        <div class=" flex arrow-one__title">規制対象車種</div>
+                        <div class="arrow-one__content">
+                            <p>
+                                自動車・自動二輪（原付バイク・電動キックボードも含む）
+                            </p>
+                            <div class="flex content-attention">
+                                <p>※</p>
+                                <p>レンタカーも規制対象となりますのでご注意ください。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex arrow-two">
+                        <div class=" flex arrow-two__title">規制対象外車種</div>
+                        <div class="flex center arrow-two__content">
+                            <p>
+                                バス、大型車、中型車、タクシー等は通行できますが、当日の乗り入れ自粛にご協力をお願いします。
+                            </p>
+                            <div class="flex arrow-two__redirect">
+                                <p>▶歩行困難者使用車両は通行できます。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-red flex panel-container__title">
+                        <p>規制区間</p>
+                        <img src="./img/icon/num-2.webp" alt="">
+                    </div>
+                    <p class="panel-title">一般国道102号の《七曲区間～子ノ口交差点から青橅山交差点（約6km）区間》</p>
+                    <div class="flex arrow-one">
+                        <div class="flex arrow-one__title">規制対象車種</div>
+                        <div class="arrow-one__content">
+                            <p>
+                                大型車、特定中型車
+                            </p>
+                            <div class="flex content-attention">
+                                <p>車両総重量8t以上、最大積載量5t以上、乗車定員11人以上</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-img">
+                <img src="./img/banner/detailmap2024.webp" alt="">
+            </div>
+            <div class="flex content-attention">
+                <p>※</p>
+                <p>奥入瀬渓流マイカー交通規制は、「奥入瀬十和田利活用協議会」の審議を経て実施されます。</p>
+            </div>
+        </section>
+        <section data-include="component/relbanner.html"
+            class="relbanner flex center container-larger-padding bg-light-gray"></section>
+        <section class="container-exsmall-padding map-container">
+
+        </section>
+    </main>
+    <footer data-include="component/footer.html"></footer>
+    <!-- js slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/frondend.js"></script>
+    <script type="text/javascript" src="./js/backend.js"></script>
+</body>
+
+</html>

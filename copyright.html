@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eco oirase</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body class="flex flex-col  align-center ">
+    <header data-include="/component/header.html" class=" header-menu">
+        <div class="flex flex-col center icon-bar" onclick="toggleMenu()">
+            <span class="nth-1"></span>
+            <span class="nth-2"></span>
+            <span class="nth-3"></span>
+            <span class="disp_n">×</span>
+        </div>
+    </header>
+    <section data-include="/component/siteheader.html" class="site-header">
+        <div class="flex site-header__wrapper container-larger">
+            <div class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+                <span class="nth-1"></span>
+                <span class="nth-2"></span>
+                <span class="nth-3"></span>
+                <span class="disp_n">×</span>
+            </div>
+        </div>
+    </section>
+    <section data-include="/component/menu.html" id="mainMenu" class="menu-container"></section>
+    <main class="flex flex-col ">
+        <section class="main-container">
+            <div class="container-medium-padding custom-header">
+                <a href="/index.html" class="logo">
+                    <img src="./img/logo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="container-small top-banner">
+                <img src="./img/banner/page-top.webp" alt="" />
+            </div>
+        </section>
+        <section class="flex flex-col container-exsmall-padding content">
+            <h1>著作権、リンク</h1>
+            <h2>著作権について</h2>
+            <div class="flex flex-col container-content">
+                <p>当サイト及びサイトに掲載されている文章、写真、イラスト、画像等の著作権は、奥入瀬十和田利活用協議会、またはコンテンツ提供者の方にあります。</p>
+                <p>これらの情報は、「私的使用のための複製」や「引用」などの著作権法上認められた場合を除き、無断で転用・引用することはできません。また、引用を行う際は適宜の方法により、必ず出所を明示して下さい。当サイトの内容の全部、または一部について、当協議会に無断で改変を行うことはできません。
+                </p>
+            </div>
+            <h2>リンクについて</h2>
+            <div class="flex flex-col container-content">
+                <p>
+                    当サイトのトップページ（
+                    <a href="#">https://www.eco-oirase.com/</a>
+                    ）へのリンクは、原則として自由です。リンクの設定をされる際は、「奥入瀬渓流エコツーリズムプロジェクト」へのリンクである旨明示をお願いします。
+                </p>
+                <p>なお、以下のことにご注意下さい。</p>
+                <p>
+                    ・事前の連絡は必要ありませんが、トップページへのリンクを行った場合、
+                    <a href="#">doro@pref.aomori.lg.jp</a>
+                    までリンク元のＵＲＬをご連絡下さい。
+                </p>
+                <p>
+                    ・トップページ以外へリンクする場合は、事前に
+                    <a href="#">doro@pref.aomori.lg.jp</a>
+                    、またはリンクを希望するページのコンテンツ提供者等へメールでご連絡下さい。
+                </p>
+                <p>※奥入瀬渓流マイカー交通規制は、「奥入瀬十和田利活用協議会」の審議を経て実施されます。</p>
+            </div>
+            <div class="flex flex-col banner-size">
+                <div class="flex flex-col banner-size__title">
+                    <p><strong>小バナー</strong>　▼88ｘ31px</p>
+                    <div class="flex center banner-size__image88x31">
+                        <img src="./img/banner/banner340-80.webp" alt="">
+                        <img src="./img/banner/banner340-80shiro.webp" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col banner-size__title">
+                    <p><strong>中バナー１</strong>　▼160ｘ40px</p>
+                    <div class="flex center banner-size__image160x40">
+                        <img src="./img/banner/banner340-80.webp" alt="">
+                        <img src="./img/banner/banner340-80shiro.webp" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col banner-size__title">
+                    <p><strong>中バナー2</strong>　▼170ｘ50px</p>
+                    <div class="flex center banner-size__image170x50">
+                        <img src="./img/banner/banner340-80.webp" alt="">
+                        <img src="./img/banner/banner340-80shiro.webp" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col banner-size__title">
+                    <p><strong>大バナー</strong>　▼230ｘ50px</p>
+                    <div class="flex center banner-size__image230x50">
+                        <img src="./img/banner/banner340-80.webp" alt="">
+                        <img src="./img/banner/banner340-80shiro.webp" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col banner-size__title">
+                    <p><strong>特大バナー</strong>　▼340ｘ80px</p>
+                    <div class="flex center banner-size__image340x88">
+                        <img src="./img/banner/banner340-80.webp" alt="">
+                        <img src="./img/banner/banner340-80shiro.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <h2>免責事項</h2>
+            <div class="flex flex-col container-content">
+                <p>当ホームページに掲載されている情報の正確さには万全を期していますが、奥入瀬十和田利活用協議会は利用者が当ホームページの情報を用いて行う一切の行為について、いかなる責任も負いません。</p>
+            </div>
+            <h2>その他</h2>
+            <div class="flex flex-col container-content">
+                <p>当ホームページは予告なしに内容を変更又は削除する場合があります。あらかじめご了承下さい。</p>
+            </div>
+        </section>
+        <section data-include="component/relbanner.html"
+            class="relbanner flex center container-larger-padding bg-light-gray"></section>
+        <section class="container-exsmall-padding map-container">
+
+        </section>
+    </main>
+    <footer data-include="component/footer.html"></footer>
+    <!-- js slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/frondend.js"></script>
+    <script type="text/javascript" src="./js/backend.js"></script>
+</body>
+
+</html>

@@ -110,6 +110,15 @@ $(document).ready(function () {
       autoplay: true,
       arrows: false,
       touchMove: false,
+      responsive: [
+        {
+          breakpoint: 800, // từ 800px trở xuống
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 2.5,
+          }
+        }
+      ]
     });
   } else {
     console.log("can't find .slide-adv");
@@ -163,7 +172,7 @@ $(document).ready(function () {
         $nth3.show();
 
         isActive = false;
-      }, 300); 
+      }, 300);
     }
   });
 });
@@ -171,36 +180,36 @@ $(document).ready(function () {
 // js fade animation
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section, footer");
-  if (!sections.length) return;          
+  if (!sections.length) return;
 
   sections.forEach(sec => sec.classList.add("hidden-section"));
 
-  let revealIndex = 0;           
+  let revealIndex = 0;
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const el = entry.target;
 
-     
-        el.style.transitionDelay = `${revealIndex * 150}ms`;
+
+        el.style.transitionDelay = `${revealIndex * 50}ms`;
         revealIndex += 1;
 
         el.classList.add("show-up");
-        observer.unobserve(el);           
+        observer.unobserve(el);
       }
     });
   }, {
-    threshold: 0.25,                       
-    rootMargin: "0px 0px -20% 0px"        
+    threshold: 0.25,
+    rootMargin: "0px 0px -20% 0px"
   });
 
   sections.forEach(sec => observer.observe(sec));
 
-  
+
   const firstVisible = Array.from(sections).find(
     s => s.getBoundingClientRect().top >= 0 &&
-         s.getBoundingClientRect().bottom <= window.innerHeight * 1.2 // linh hoạt
+      s.getBoundingClientRect().bottom <= window.innerHeight * 1.2 // linh hoạt
   );
   if (firstVisible) {
     firstVisible.classList.add("show-up");
@@ -218,3 +227,13 @@ function toggleMenu() {
     menu.classList.add("active");
   }
 }
+
+// js scroll scene
+window.addEventListener('scroll', function () {
+  const header = document.querySelector('.header-menu');
+  if (window.scrollY > 200) {
+    header.style.display = 'flex'; 
+  } else {
+    header.style.display = 'none'; 
+  }
+});
