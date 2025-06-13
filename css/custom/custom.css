@@ -1058,3 +1058,48 @@
 .banner-size__image340x88 img {
     max-width: 340px;
 }
+
+/* ===== guide html ====== */
+
+.guide-list{
+    padding: 15px;
+    gap: 24px;
+    list-style: number;
+}
+
+.guide-list li {
+    font-size: var(--font-size-base);
+}
+
+.guide-list__lv2{
+    list-style:none;
+}
+
+.guide-list__lv3{
+    list-style:disc;
+    margin-left: 5%;
+}
+
+.guide-list__lv3>li:last-child{
+    margin-bottom: 24px;
+}
+
+.content a{
+    padding: 15px;
+    color: blue;
+    text-decoration: underline;
+}
+
+/* ===== contact html ===== */
+
+.contact-list{
+    gap: 24px;
+}
+
+.contact-list>li{
+    font-weight: bold;
+}
+
+.contact-list__level li{
+    font-weight: 300;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eco oirase</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body class="flex flex-col  align-center ">
+    <header data-include="/component/header.html" class=" header-menu">
+        <div class="flex flex-col center icon-bar" onclick="toggleMenu()">
+            <span class="nth-1"></span>
+            <span class="nth-2"></span>
+            <span class="nth-3"></span>
+            <span class="disp_n">×</span>
+        </div>
+    </header>
+    <section data-include="/component/siteheader.html" class="site-header">
+        <div class="flex site-header__wrapper container-larger">
+            <div class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+                <span class="nth-1"></span>
+                <span class="nth-2"></span>
+                <span class="nth-3"></span>
+                <span class="disp_n">×</span>
+            </div>
+        </div>
+    </section>
+    <section data-include="/component/menu.html" id="mainMenu" class="menu-container"></section>
+    <main class="flex flex-col ">
+        <section class="main-container">
+            <div class="container-medium-padding custom-header">
+                <a href="/index.html" class="logo">
+                    <img src="./img/logo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="container-small top-banner">
+                <img src="./img/banner/page-top.webp" alt="" />
+            </div>
+        </section>
+        <section class="flex flex-col container-exsmall-padding content">
+            <h1>リンク集</h1>
+            <h2>観光案内</h2>
+            <a href="#">(一財)自然公園財団十和田支部</a>
+            <a href="#">十和田八幡平国立公園(環境省)</a>
+            <a href="#">(一財)十和田湖ふるさと活性化公社</a>
+            <a href="#">(一社)十和田奥入瀬観光機構</a>
+            <a href="#">青森県文化観光情報サイト「アプティネット</a>
+            <a href="#">一社）十和田湖国立公園協会</a>
+            <h2>観光施設（十和田湖畔</h2>
+            <a href="#">十和田湖遊覧船 十和田観光電鉄</a>
+            <h2>観光施設（焼山</h2>
+            <a href="#">奥入瀬渓流館</a>
+            <a href="#">奥入瀬湧水館</a>
+            <a href="#">石ヶ戸休憩所</a>
+            <a href="#">奥入瀬渓流温泉スキー場</a>
+            <h2>行政機関</h2>
+            <a href="#">環境省東北地方環境事務所</a>
+            <a href="#">十和田市役所</a>
+            <a href="#">青森県県土整備部道路課</a>
+            <a href="#">青森県上北地域県民局</a>
+            <h2>道の駅</h2>
+            <a href="#">道の駅奥入瀬「ろまんパーク」</a>
+            <h2>道路情報</h2>
+            <a href="#">青森みち情報</a>
+            <a href="#">秋田のみち情報</a>
+            <h2>公共交通機関(鉄道)</h2>
+            <a href="#">ＪＲ東日本</a>
+            <a href="#">青い森鉄道</a>
+            <a href="#">十和田観光電鉄</a>
+            <h2>公共交通機関(航空)</h2>
+            <a href="#">ＪＡＬ</a>
+            <a href="#">青森空港ビル(株)</a>
+            <a href="#">三沢空港ターミナル(株)</a>
+        </section>
+        <section data-include="component/relbanner.html"
+            class="relbanner flex center container-larger-padding bg-light-gray"></section>
+        <section class="container-exsmall-padding map-container">
+
+        </section>
+    </main>
+    <footer data-include="component/footer.html"></footer>
+    <!-- js slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/frondend.js"></script>
+    <script type="text/javascript" src="./js/backend.js"></script>
+</body>
+
+</html>
