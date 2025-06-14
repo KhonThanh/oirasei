@@ -107,7 +107,7 @@
 
 .icon-bar span {
     display: block;
-    height: 3px;
+    height: 2px;
     background: var(--color-white);
     margin: 5px auto;
     width: 60%;
@@ -216,7 +216,7 @@
     height: 97px;
     display: block;
     top: 30px;
-    left: 290px;
+    left: 20px;
 }
 
 .logo img {
@@ -230,8 +230,7 @@
     z-index: 10;
     flex-direction: column;
     gap: 15px;
-    left: 290px;
-    bottom: 14vh;
+    bottom: 10vh;
 }
 
 .pos_r {
@@ -729,7 +728,8 @@
     z-index: 4;
     position: absolute;
     width: 100%;
-    top: -64px
+    top: -64px;
+    cursor: pointer;
 }
 
 .pagetop img {
@@ -1018,10 +1018,10 @@
 
 .banner-size__title {}
 
-.banner-size__image88x31 ,
-.banner-size__image160x40 ,
-.banner-size__image170x50 ,
-.banner-size__image230x50 ,
+.banner-size__image88x31,
+.banner-size__image160x40,
+.banner-size__image170x50,
+.banner-size__image230x50,
 .banner-size__image340x88 {
     gap: 20px;
 }
@@ -1061,7 +1061,7 @@
 
 /* ===== guide html ====== */
 
-.guide-list{
+.guide-list {
     padding: 15px;
     gap: 24px;
     list-style: number;
@@ -1071,20 +1071,20 @@
     font-size: var(--font-size-base);
 }
 
-.guide-list__lv2{
-    list-style:none;
+.guide-list__lv2 {
+    list-style: none;
 }
 
-.guide-list__lv3{
-    list-style:disc;
+.guide-list__lv3 {
+    list-style: disc;
     margin-left: 5%;
 }
 
-.guide-list__lv3>li:last-child{
+.guide-list__lv3>li:last-child {
     margin-bottom: 24px;
 }
 
-.content a{
+.content a {
     padding: 15px;
     color: blue;
     text-decoration: underline;
@@ -1092,14 +1092,112 @@
 
 /* ===== contact html ===== */
 
-.contact-list{
+.contact-list {
     gap: 24px;
 }
 
-.contact-list>li{
+.contact-list>li {
     font-weight: bold;
 }
 
-.contact-list__level li{
+.contact-list__level li {
     font-weight: 300;
+}
+
+/* ===== css access page ===== */
+.custom-accesslayout h3 {
+    font-size: calc(var(--font-size-base) - 2px);
+    font-weight: bold;
+}
+
+.custom-accesslayout {
+    margin: 24px 0px 48px 5px;
+    gap: 24px;
+}
+
+.custom-accesslayout a {
+    cursor: pointer;
+}
+
+.custom-accesslayout ul {
+    margin-left: 5px;
+}
+
+.custom-accesslayout__second-level {
+    gap: 24px;
+}
+
+.custom-accesslayout__second-level h4 {
+    font-weight: bold;
+    font-size: var(--font-size-base);
+}
+
+.acccess-image {
+    width: 100%;
+    padding: 15px;
+}
+
+.acccess-image img {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 521 / 725;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* ===== css team html ===== */
+
+
+.team-title {
+    margin: 15px 0 5px;
+    border:2px solid var(--color-medium-green);
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.team-title span{
+    color: var(--color-dark-green);
+    font-weight: bold;
+    font-size: var(--font-size-base);
+}
+
+.team-partner{
+    border-top: 1px solid var(--color-black);
+    border-left: 1px solid var(--color-black);
+    border-right: 1px solid var(--color-black);
+}
+
+.partner>a {
+    padding: 0px !important;
+    font-size: var(--font-size-base) + 0.8;
+    font-weight: bold;
+    color: var(--color-dark-blue);
+}
+
+.partner {
+    padding: 5px 3px 5px 20px;
+    gap: 2px;
+    align-items: center;
+    border-bottom: 1px solid var(--color-black);
+}
+
+.team-list {
+    grid-template-columns: repeat(3,1fr);
+    margin: 5px 0px;
+    border-top: 1px solid var(--color-black);
+    border-left: 1px solid var(--color-black);
+}
+
+.team-list__item {
+    padding: 1px 3px 1px 5px;
+    border-bottom: 1px solid var(--color-black);
+    border-right: 1px solid var(--color-black);
+}
+
+.team-list__item a{
+    font-size: calc(var(--font-size-base) - 1.6px);
+}
+
+.note-team{
+    font-size: calc(var(--font-size-base) - 2.6px);
 }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eco oirase</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body class="flex flex-col  align-center ">
+    <header data-include="/component/header.html" class=" header-menu">
+        <div class="flex flex-col center icon-bar" onclick="toggleMenu()">
+            <span class="nth-1"></span>
+            <span class="nth-2"></span>
+            <span class="nth-3"></span>
+            <span class="disp_n">×</span>
+        </div>
+    </header>
+    <section data-include="/component/siteheader.html" class="site-header">
+        <div class="flex site-header__wrapper container-larger">
+            <div class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+                <span class="nth-1"></span>
+                <span class="nth-2"></span>
+                <span class="nth-3"></span>
+                <span class="disp_n">×</span>
+            </div>
+        </div>
+    </section>
+    <section data-include="/component/menu.html" id="mainMenu" class="menu-container"></section>
+    <main class="flex flex-col ">
+        <section class="main-container">
+            <div class="container-medium-padding custom-header">
+                <a href="/index.html" class="logo">
+                    <img src="./img/logo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="container-small top-banner">
+                <img src="./img/banner/page-top.webp" alt="" />
+            </div>
+        </section>
+        <section class="flex flex-col container-exsmall-padding content">
+            <h1>プロジェクトチーム員</h1>
+            <h2>令和6年度　奥入瀬渓流エコツーリズムプロジェクトチーム員一覧</h2>
+            <div class="flex center team-title">
+                <span>奥入瀬渓流エコツーリズムプロジェクトには、</span>
+                <span>十和田市内をはじめとし、</span>
+                <span>県内の多くの企業の皆様に支えられています。</span>
+            </div>
+            <div class="flex flex-col team-partner">
+                <div class="flex partner">
+                    <img src="./img/icon/ico_leaf.gif" alt="">
+                    <a href="#">田中建設㈱</a>
+                </div>
+                <div class="flex partner">
+                    <img src="./img/icon/ico_leaf.gif" alt="">
+                    <a href="#">NPO法人 青森県ウオーキング協会</a>
+                </div>
+                <div class="flex partner">
+                    <img src="./img/icon/ico_leaf.gif" alt="">
+                    <a href="#">上北農産加工㈱</a>
+                </div>
+                <div class="flex partner">
+                    <img src="./img/icon/ico_leaf.gif" alt="">
+                    <a href="#">東北電力ネットワーク㈱十和田電力センター</a>
+                </div>
+            </div>
+            <div class="grid team-list">
+                <div class="team-list__item">
+                    <a href="#">(株)青工　十和田支店</a>
+                </div>
+                <div class="team-list__item">
+                    <a href="#">ジェイアールバス東北（株）</a>
+                </div>
+                <div class="team-list__item">
+                    <a href="#">田中建設工業(株)</a>
+                </div>
+                <div class="team-list__item">
+                    <a href="#">十和田おいらせ農業協同組合</a>
+                </div>
+                <div class="team-list__item">
+                    <a href="#">(一財)十和田湖ふるさと活性化公社</a>
+                </div>
+                <div class="team-list__item">
+                    <a href="#">(株)十和田ビルサービス</a>
+                </div>
+                <div class="team-list__item">
+                    <a href="#">(株)中達組</a>
+                </div>
+                <div class="team-list__item">
+                    <a href="#">程川電気工事(株)</a>
+                </div>
+                <div class="team-list__item">
+                    <a href="#">丸井重機建設(株)</a>
+                </div>
+                <div class="team-list__item">
+                    <a href="#">(株)吉田産業</a>
+                </div>
+            </div>
+            <p class="note-team">※五十音順</p>
+        </section>
+        <section data-include="component/relbanner.html"
+            class="relbanner flex center container-larger-padding bg-light-gray"></section>
+    </main>
+    <footer data-include="component/footer.html"></footer>
+    <!-- js slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/frondend.js"></script>
+    <script type="text/javascript" src="./js/backend.js"></script>
+</body>
+
+</html>

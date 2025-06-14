@@ -5,6 +5,7 @@
 .text-green {  color: var(--color-green); }
 .text-light-blue { color: var(--color-light-blue); }
 .text-red { color: var(--color-red); }
+.text-dark-green { color: var(--color-dark-green);}
 
 .bg-white {  background-color: var(--color-white); }
 .bg-primary {  background-color: var(--primary-color); }

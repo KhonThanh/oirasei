@@ -237,3 +237,11 @@ window.addEventListener('scroll', function () {
     header.style.display = 'none'; 
   }
 });
+
+// js scroll to top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
