@@ -688,11 +688,11 @@
 }
 
 .アクセス {
-    background-image: url(/img/banner/top-access.webp);
+    background-image: url(./img/banner/top-access.webp);
 }
 
 .お問い合わせ {
-    background-image: url(/img/banner/top-contact.webp);
+    background-image: url(./img/banner/top-contact.webp);
 }
 
 
