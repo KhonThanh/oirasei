@@ -688,11 +688,11 @@
 }
 
 .アクセス {
-    background-image: url(/img/banner/top-access.webp);
+    background-image: url(../../img/banner/top-access.webp);
 }
 
 .お問い合わせ {
-    background-image: url(/img/banner/top-contact.webp);
+    background-image: url(../../img/banner/top-contact.webp);
 }
 
 
@@ -777,7 +777,7 @@
 
 .content {
     margin: 0 auto;
-    background-image: url(/img/banner/image99.webp);
+    background-image: url(../../img/banner/image99.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
@@ -791,7 +791,7 @@
 }
 
 .content>h2 {
-    background-image: url(/img/icon/h3_ico.gif);
+    background-image: url(../../img/icon/h3_ico.gif);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
@@ -961,11 +961,11 @@
 }
 
 .arrow-one__title {
-    background-image: url(/img/icon/detail-arrow-1.webp);
+    background-image: url(../../img/icon/detail-arrow-1.webp);
 }
 
 .arrow-two__title {
-    background-image: url(/img/icon/detail-arrow-2.webp);
+    background-image: url(../../img/icon/detail-arrow-2.webp);
 }
 
 .arrow-one__content>p {
