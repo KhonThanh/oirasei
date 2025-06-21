@@ -6,6 +6,12 @@
     } */
 }
 
+@media (max-width: 1450px){
+    .site-header__wrapper{
+        padding-left: 20px;
+    }
+}
+
 @media (max-width: 1440px) and (min-width: 1025px) {
 
     .logo,

@@ -125,7 +125,6 @@ $(document).ready(function () {
   }
 });
 
-
 //js icon bars
 
 $(document).ready(function () {
@@ -232,9 +231,9 @@ function toggleMenu() {
 window.addEventListener('scroll', function () {
   const header = document.querySelector('.header-menu');
   if (window.scrollY > 200) {
-    header.style.display = 'flex'; 
+    header.style.display = 'flex';
   } else {
-    header.style.display = 'none'; 
+    header.style.display = 'none';
   }
 });
 

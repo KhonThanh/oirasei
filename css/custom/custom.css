@@ -13,6 +13,12 @@
     padding: 30px 30px;
 }
 
+.site-header__wrapper {
+    justify-content: space-between;
+    padding: 30px 30px 30px 0px;
+    padding-left: clamp(40px, 10vw, 200px);
+}
+
 /* ===== custom menu ===== */
 
 .menu-container {
@@ -43,9 +49,23 @@
     gap: 20px;
 }
 
+.menu-list li a:hover {
+    opacity: 0.6;
+}
+
 .menu-list a {
     color: var(--color-white);
     font-size: var(--font-size-base);
+}
+
+.menu-list li>ul {
+    list-style: disc;
+    color: var(--color-white);
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px 0px 0px;
 }
 
 .lang-container {
@@ -98,18 +118,20 @@
 /* ===== icon animation bars ===== */
 
 .icon-bar {
+    all: unset;
     width: 55px;
     height: 55px;
     position: relative;
     cursor: pointer;
     background-color: var(--primary-color);
+    border: none;
 }
 
 .icon-bar span {
     display: block;
     height: 2px;
     background: var(--color-white);
-    margin: 5px auto;
+    margin: 12px auto;
     width: 60%;
 }
 
@@ -119,8 +141,8 @@
 
 .icon-bar .disp_n {
     position: absolute;
-    top: 49%;
-    left: 39%;
+    top: 39%;
+    left: 37%;
     transform: translate(-50%, -50%);
     font-size: 47px;
     color: var(--color-white);
@@ -176,6 +198,7 @@
     animation: rotate-ccw 0.6s ease forwards;
 }
 
+
 /* -- css header menu */
 .header-menu {
     justify-content: right;
@@ -210,13 +233,16 @@
 }
 
 .logo {
-    position: absolute;
+    cursor: pointer;
     z-index: 2;
     width: 148px;
     height: 97px;
     display: block;
     top: 30px;
-    left: 20px;
+}
+
+.logo:hover {
+    opacity: 0.6;
 }
 
 .logo img {
@@ -1150,18 +1176,18 @@
 
 .team-title {
     margin: 15px 0 5px;
-    border:2px solid var(--color-medium-green);
+    border: 2px solid var(--color-medium-green);
     flex-wrap: wrap;
     padding: 5px;
 }
 
-.team-title span{
+.team-title span {
     color: var(--color-dark-green);
     font-weight: bold;
     font-size: var(--font-size-base);
 }
 
-.team-partner{
+.team-partner {
     border-top: 1px solid var(--color-black);
     border-left: 1px solid var(--color-black);
     border-right: 1px solid var(--color-black);
@@ -1182,7 +1208,7 @@
 }
 
 .team-list {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 5px 0px;
     border-top: 1px solid var(--color-black);
     border-left: 1px solid var(--color-black);
@@ -1194,10 +1220,10 @@
     border-right: 1px solid var(--color-black);
 }
 
-.team-list__item a{
+.team-list__item a {
     font-size: calc(var(--font-size-base) - 1.6px);
 }
 
-.note-team{
+.note-team {
     font-size: calc(var(--font-size-base) - 2.6px);
 }
