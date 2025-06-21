@@ -190,29 +190,34 @@ document.addEventListener("DOMContentLoaded", () => {
       if (entry.isIntersecting) {
         const el = entry.target;
 
-
         el.style.transitionDelay = `${revealIndex * 50}ms`;
-        revealIndex += 1;
+        revealIndex++;
 
         el.classList.add("show-up");
-        observer.unobserve(el);
+
+        // Chỉ unobserve nếu toàn bộ phần tử đã nằm trong viewport
+        const rect = el.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight * 1.1) {
+          observer.unobserve(el);
+        }
       }
     });
   }, {
-    threshold: 0.25,
-    rootMargin: "0px 0px -20% 0px"
+    threshold: 0.15, // thấp hơn để dễ trigger phần đầu dài
+    rootMargin: "0px 0px -10% 0px" // giảm margin đáy
   });
 
   sections.forEach(sec => observer.observe(sec));
 
+  // Reveal phần đầu nếu đã nằm trên viewport
+  const firstVisible = Array.from(sections).find(sec => {
+    const rect = sec.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  });
 
-  const firstVisible = Array.from(sections).find(
-    s => s.getBoundingClientRect().top >= 0 &&
-      s.getBoundingClientRect().bottom <= window.innerHeight * 1.2 // linh hoạt
-  );
   if (firstVisible) {
     firstVisible.classList.add("show-up");
-    observer.unobserve(firstVisible);
+    // Đừng unobserve ở đây, để IntersectionObserver tiếp tục xử lý
   }
 });
 
