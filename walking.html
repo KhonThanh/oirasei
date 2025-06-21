@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eco oirase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body class="flex flex-col  align-center ">
+    <header data-include="component/header.html" class=" header-menu">
+        <div class="flex flex-col center icon-bar" onclick="toggleMenu()">
+            <span class="nth-1"></span>
+            <span class="nth-2"></span>
+            <span class="nth-3"></span>
+            <span class="disp_n">×</span>
+        </div>
+    </header>
+    <section data-include="component/siteheader.html" class="site-header">
+        <div class="flex site-header__wrapper container-larger">
+            <div class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+                <span class="nth-1"></span>
+                <span class="nth-2"></span>
+                <span class="nth-3"></span>
+                <span class="disp_n">×</span>
+            </div>
+        </div>
+    </section>
+    <section data-include="component/menu.html" id="mainMenu" class="menu-container"></section>
+    <main class="flex flex-col ">
+        <section class="main-container">
+            <div class="container-medium-padding custom-header">
+                <a href="/index.html" class="logo">
+                    <img src="./img/logo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="container-small top-banner">
+                <img src="./img/banner/page-top.webp" alt="" />
+            </div>
+        </section>
+        <section class="flex flex-col container-exsmall-padding content">
+            <h1>奥入瀬渓流の歩き方</h1>
+            <div class="content_image">
+                <img src="./img/banner/pict02_2022.webp" alt="">
+            </div>
+            <p class="subtitle-img">[徒歩] <br> 焼山～子ノ口（全区間）　約5時間　約14km <br> 石ケ戸～子ノ口（見所区間）　約2時間半　約9km </p>
+            <h2>令和5年度の活動内容</h2>
+            <div class=" flex flex-col walking_content">
+                <strong>十和田湖自然ガイドクラブ</strong>
+                <p>十和田湖に宿泊される観光客の皆さまに対し、湖畔の日々変化する自然や乙女の像、十和田神社などを地元在住のガイドが、毎日早朝1時間案内しています。観光客の皆さまとともに自然の美しさを感動し合い、先人の残した文化遺産を偲び、国立公園のすばらしさや保護意識を高めたいと考えています。
+                </p>
+                <figure class="flex walking-table">
+                    <div>
+                        <img src="./img/banner/br04.webp" alt="">
+                    </div>
+                    <figcaption class="walking-table__content">
+                        <p>〒018-5501 十和田市大字奥瀬字十和田486番地（吉崎方） <br> 電話:090-5181-7658　FAX:0176-75-1860</p>
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td valign="top" nowarp="nowarp">●案内範囲</td>
+                                    <td valign="top">/</td>
+                                    <td valign="top">
+                                        <p>十和田湖畔休屋周辺（約1時間）<br>休屋湖畔～乙女の像～十和田神社～開運の小道
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" nowarp="nowarp">●案内期間</td>
+                                    <td valign="top">/</td>
+                                    <td valign="top">
+                                        <p> ４月下旬～11月初旬（火水定休日）</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" nowarp="nowarp">●費用</td>
+                                    <td valign="top">/</td>
+                                    <td valign="top">
+                                        <p>500円</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" nowarp="nowarp">●申込み</td>
+                                    <td valign="top">/</td>
+                                    <td valign="top">
+                                        <p>事前受付不要<br>直接朝5時55分　十和田湖観光交流センター「ぷらっと」集合→6時出発</p>
+                                        <div class="table-content__list">
+                                            <p>※</p>
+                                            <p>月曜日のみ集合場所は「ホテル十和田荘」前になります</p>
+                                        </div>
+                                        <div class="table-content__list">
+                                            <p>※</p>
+                                            <p>休屋早朝ガイド以外でも、十和田湖・奥入瀬でのガイド派遣等に応じています（有料）</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figcaption>
+                </figure>
+            </div>
+            <h2>ガイドと一緒にもっと楽しむ奥入瀬渓流</h2>
+            <p>天然の自然博物館を、ガイドと一緒にもっと体験しませんか。ガイドツアーやアクティビティ等、詳しくはパンフレットをご覧ください。</p>
+            <div class="content_image_second">
+                <img src="./img/banner/screenshot_1725519251.webp" alt="">
+            </div>
+        </section>
+        <section data-include="component/relbanner.html"
+            class="relbanner flex center container-larger-padding bg-light-gray"></section>
+    </main>
+    <footer data-include="component/footer.html"></footer>
+    <!-- js slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/frondend.js"></script>
+    <script type="text/javascript" src="./js/backend.js"></script>
+</body>
+
+</html>

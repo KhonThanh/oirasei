@@ -94,6 +94,22 @@
     .detail-content__first {
         flex-wrap: wrap;
     }
+
+    .content_image img{
+        width: 100%;
+    }
+
+    .walking-table{
+        flex-direction: column;
+    }
+
+    .walking-table img{
+        width: 100%;
+    }
+
+    .content_image_second img{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 375px) {

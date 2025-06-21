@@ -797,6 +797,7 @@
     background-position: left;
     padding: 0 0 5px 40px;
     border-bottom: 1px solid var(--primary-color);
+    font-size: calc(var(--font-size-base) + 2px);
 }
 
 .container-content {
@@ -1150,18 +1151,18 @@
 
 .team-title {
     margin: 15px 0 5px;
-    border:2px solid var(--color-medium-green);
+    border: 2px solid var(--color-medium-green);
     flex-wrap: wrap;
     padding: 5px;
 }
 
-.team-title span{
+.team-title span {
     color: var(--color-dark-green);
     font-weight: bold;
     font-size: var(--font-size-base);
 }
 
-.team-partner{
+.team-partner {
     border-top: 1px solid var(--color-black);
     border-left: 1px solid var(--color-black);
     border-right: 1px solid var(--color-black);
@@ -1182,7 +1183,7 @@
 }
 
 .team-list {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 5px 0px;
     border-top: 1px solid var(--color-black);
     border-left: 1px solid var(--color-black);
@@ -1194,10 +1195,95 @@
     border-right: 1px solid var(--color-black);
 }
 
-.team-list__item a{
+.team-list__item a {
     font-size: calc(var(--font-size-base) - 1.6px);
 }
 
-.note-team{
+.note-team {
     font-size: calc(var(--font-size-base) - 2.6px);
+}
+
+/* css activity */
+.activity-img {}
+
+.activity-img__container {
+    width: 250px;
+    padding: 15px;
+}
+
+.activity-img__container img {
+    width: 100%;
+    aspect-ratio: 500 / 710;
+    height: auto;
+}
+
+.activity-img__container figcaption {
+    text-align: center;
+}
+
+.activity-img__container a {
+    padding: 0;
+}
+
+.activity-adobereader {
+    align-items: center;
+}
+
+.activity-adobereader p {
+    font-size: calc(var(--font-size-base) - 2.4px);
+}
+
+.activity-link {
+    gap: 10px;
+}
+
+.activity-link a {
+    padding: 0px;
+}
+
+/* css walking */
+.content_image img {
+    aspect-ratio: 1140 / 3396;
+    width: 70%;
+    height: auto;
+}
+
+.content_image_second,
+.content_image {
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle-img {
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+.walking_content {
+   padding: 15px;
+   gap: 15px;
+}
+
+.walking-table {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 15px;
+    max-width: 650px;
+}
+
+.walking-table img{
+    aspect-ratio: 400 / 284;
+    width: 200px;
+    height: auto;
+}
+
+.walking-table__content {}
+
+.table-content__list {}
+
+.content_image_second img{
+    aspect-ratio: 1366 / 1948;
+    width: 60%;
+    height: auto;
 }
