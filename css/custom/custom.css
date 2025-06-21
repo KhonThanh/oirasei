@@ -1227,3 +1227,32 @@
 .note-team {
     font-size: calc(var(--font-size-base) - 2.6px);
 }
+
+/* css walking page */
+.content_image img{
+    aspect-ratio: 1140 / 3396;
+    width: 60%;
+    height: auto;
+}
+
+.subtitle-img{
+    font-size: var(--font-size-base);
+    color: var(--color-blacks);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.walking_content{
+    gap: 15px;
+    padding: 15px;
+}
+
+.walking_content strong{
+    font-size: calc(var(--font-size-base) + 2px);
+}
+
+.walking-table{
+    gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}

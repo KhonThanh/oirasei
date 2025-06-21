@@ -11,7 +11,14 @@
 </head>
 
 <body class="flex flex-col  align-center ">
-    <header data-include="component/header.html" class=" header-menu"></header>
+    <header  class=" header-menu">
+        <button class="flex flex-col center icon-bar" onclick="toggleMenu()">
+            <span class="nth-1"></span>
+            <span class="nth-2"></span>
+            <span class="nth-3"></span>
+            <span class="disp_n">×</span>
+        </button>
+    </header>
     <section class="site-header">
         <div class="flex site-header__wrapper container-larger">
             <a href="/index.html" class="logo">

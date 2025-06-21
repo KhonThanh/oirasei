@@ -11,8 +11,27 @@
 </head>
 
 <body class="flex flex-col  align-center ">
-    <header data-include="component/header.html" class=" header-menu"></header>
-    <section data-include="component/siteheader.html" class="site-header"></section>
+    <header class=" header-menu">
+        <button class="flex flex-col center icon-bar" onclick="toggleMenu()">
+            <span class="nth-1"></span>
+            <span class="nth-2"></span>
+            <span class="nth-3"></span>
+            <span class="disp_n">×</span>
+        </button>
+    </header>
+    <section class="site-header">
+        <div class="flex site-header__wrapper container-larger">
+            <a href="/index.html" class="logo">
+                <img src="/img/logo/logo.png" alt="" loading="lazy" width="296" height="194">
+            </a>
+            <button class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+                <span class="nth-1"></span>
+                <span class="nth-2"></span>
+                <span class="nth-3"></span>
+                <span class="disp_n">×</span>
+            </button>
+        </div>
+    </section>
     <section data-include="component/menu.html" id="mainMenu" class="menu-container"></section>
     <main class="flex flex-col ">
         <section class="main-container">

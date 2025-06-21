@@ -11,43 +11,41 @@
 </head>
 
 <body class="flex flex-col  align-center ">
-    <header data-include="component/header.html" class=" header-menu">
-        <div class="flex flex-col center icon-bar" onclick="toggleMenu()">
+    <header class=" header-menu">
+        <button class="flex flex-col center icon-bar" onclick="toggleMenu()">
             <span class="nth-1"></span>
             <span class="nth-2"></span>
             <span class="nth-3"></span>
             <span class="disp_n">×</span>
-        </div>
+        </button>
     </header>
-    <section data-include="component/siteheader.html" class="site-header">
+    <section class="site-header">
         <div class="flex site-header__wrapper container-larger">
-            <div class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+            <a href="/index.html" class="logo">
+                <img src="/img/logo/logo.png" alt="" loading="lazy" width="296" height="194">
+            </a>
+            <button class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
                 <span class="nth-1"></span>
                 <span class="nth-2"></span>
                 <span class="nth-3"></span>
                 <span class="disp_n">×</span>
-            </div>
+            </button>
         </div>
     </section>
     <section data-include="component/menu.html" id="mainMenu" class="menu-container"></section>
     <main class="flex flex-col ">
         <section class="main-container">
-            <div class="container-medium-padding custom-header">
-                <a href="/index.html" class="logo">
-                    <img src="./img/logo/logo.png" alt="">
-                </a>
-            </div>
             <div class="container-small top-banner">
                 <img src="./img/banner/page-top.webp" alt="" />
             </div>
         </section>
         <section class="flex flex-col container-exsmall-padding content">
             <h1>奥入瀬渓流の歩き方</h1>
-            <div class="content_image">
+            <div class="flex center content_image">
                 <img src="./img/banner/pict02_2022.webp" alt="">
             </div>
             <p class="subtitle-img">[徒歩] <br> 焼山～子ノ口（全区間）　約5時間　約14km <br> 石ケ戸～子ノ口（見所区間）　約2時間半　約9km </p>
-            <h2>令和5年度の活動内容</h2>
+            <h2>自然ボランティアガイド</h2>
             <div class=" flex flex-col walking_content">
                 <strong>十和田湖自然ガイドクラブ</strong>
                 <p>十和田湖に宿泊される観光客の皆さまに対し、湖畔の日々変化する自然や乙女の像、十和田神社などを地元在住のガイドが、毎日早朝1時間案内しています。観光客の皆さまとともに自然の美しさを感動し合い、先人の残した文化遺産を偲び、国立公園のすばらしさや保護意識を高めたいと考えています。
