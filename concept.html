@@ -11,7 +11,7 @@
 </head>
 
 <body class="flex flex-col  align-center ">
-    <header data-include="component/header.html" class=" header-menu">
+    <header class=" header-menu">
         <div class="flex flex-col center icon-bar" onclick="toggleMenu()">
             <span class="nth-1"></span>
             <span class="nth-2"></span>
@@ -19,42 +19,136 @@
             <span class="disp_n">×</span>
         </div>
     </header>
-    <section data-include="component/siteheader.html" class="site-header">
+    <section class="site-header">
         <div class="flex site-header__wrapper container-larger">
-            <div class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+            <a href="/index.html" class="logo">
+                <img src="/img/logo/logo.png" alt="" loading="lazy" width="296" height="194">
+            </a>
+            <button class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
                 <span class="nth-1"></span>
                 <span class="nth-2"></span>
                 <span class="nth-3"></span>
                 <span class="disp_n">×</span>
-            </div>
+            </button>
         </div>
     </section>
     <section data-include="component/menu.html" id="mainMenu" class="menu-container"></section>
     <main class="flex flex-col ">
         <section class="main-container">
-            <div class="container-medium-padding custom-header">
-                <a href="/index.html" class="logo">
-                    <img src="./img/logo/logo.png" alt="">
-                </a>
-            </div>
             <div class="container-small top-banner">
-                <img src="./img/banner/page-top.webp" alt="" />
+                <img src="./img/banner/concept-top.jpg" alt="" />
             </div>
         </section>
         <section class="flex flex-col container-exsmall-padding content">
             <h1>奥入瀬渓流エコツーリズム推進全体構想について</h1>
             <div class="concept-content__container">
                 <span>
-
+                    奥入瀬渓流エコツーリズムプロジェクト実行委員会では、奥入瀬渓流における自然環境の利活用に関する仕組みやルールを定める「奥入瀬渓流エコツーリズム推進全体構想」を策定し、2024年５月に国からの認定を受けました。
                 </span>
                 <p>
-                    
+                    『エコツーリズム』とは
+                    <br>
+                    自然環境や歴史文化を対象とし、それらを体験し、学ぶとともに、対象となる地域の自然環境や 歴史文化の保全に責任を持つ観光のありかたのことをいいます。
+                </p>
+                <a href="#" class=" flex center place-adv__btn">
+                    <p>全文ははこちらから（PDFを開く）</p>
+                    <img src="./img/icon/chevron-right-solid.svg" alt="">
+                </a>
+            </div>
+            <h2>推進地域</h2>
+            <div class="concept-content__container">
+                <p>
+                    天然の自然博物館を、ガイドと一緒にもっと体験しませんか。ガイドツアーやアクティビティ等、詳しくはパンフレットをご覧ください。
+                </p>
+                <a href="#" class=" flex center place-adv__btn">
+                    <p>対象地域図を見る（PDFを開く）</p>
+                    <img src="./img/icon/chevron-right-solid.svg" alt="">
+                </a>
+            </div>
+            <h2>全体構想の概要</h2>
+            <div class="concept-content__container">
+                <p>
+                    奥入瀬渓流エコツーリズム推進全体構想で推進するエコツーリズムの基本方針は以下のとおりです。
+                </p>
+                <table border="1" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td>
+                            <strong>1．自然環境の保全</strong><br>
+                            ～天然の自然博物館「奥入瀬」を将来にわたって保全するためのエコツーリズム～
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>2．観光・地域の振興</strong><br>
+                            ～奥入瀬ならではの自然を活用した観光・地域振興。人と人との出会いを生み出すエコツーリズム～
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>3．人と自然のふれあいの推進</strong><br>
+                            ～「人と自然の新しい関係」を創り出すエコツーリズム～
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    これらの方針を踏まえて、自然環境、利用環境、エコツアーの質に関する各種ルールを設定し、「天然の自然博物館」として地域の自然を保全しつつ活用していきます。
+                    <br>
+                    また、自然環境や利用環境の現状把握と保全のため、地元ガイドをはじめとする関係者や関係機関により自然環境のモニタリングも継続して行っていきます。
                 </p>
             </div>
-            <h2>ガイドと一緒にもっと楽しむ奥入瀬渓流</h2>
-            <p>天然の自然博物館を、ガイドと一緒にもっと体験しませんか。ガイドツアーやアクティビティ等、詳しくはパンフレットをご覧ください。</p>
-            <div class="content_image_second">
-                <img src="./img/banner/screenshot_1725519251.webp" alt="">
+            <h2>奥入瀬渓流の散策を楽しむための利用ルール</h2>
+            <div class="concept-content__container">
+                <strong>【基本ルール】</strong>
+                <p>
+                    状に影響を与えない利用をしましょう
+                    <br>
+                    ※奥入瀬渓流は、国立公園の特別保護地区かつ特別名勝・天然記念物、国有林の自然維持タイプであり、厳正な保護がなされています。奥入瀬渓流の素晴らしい自然環境を次世代に残していくために、ご理解・ご協力をお願いします。
+                </p>
+                <figure>
+                    <strong>【禁止事項】</strong>
+                    <div>
+                        <img src="./img/advertisement/oirase-gorge.webp" alt="">
+                        <figcaption>
+                            <strong></strong>
+                        </figcaption>
+                    </div>
+                </figure>
+            </div>
+            <h2>現在行われているツアー</h2>
+            <div class="concept-content__container">
+                <p>
+                    自然を体験するプログラムとして、当地域では、地元ガイドと渓流沿いの歩道や多数ある滝を巡るツアー、奥入瀬ならではの自然環境が育んだコケなどをじっくり観察するツアー、他にはない特徴的な地形や地質を楽しむツアー、豊かな自然の癒しを体感するツアー、冬季のスノーシューツアーや氷瀑観察などが行われています。
+                </p>
+                <a href="#" class=" flex center place-adv__btn">
+                    <p>ツアーパンフレットはこちらから（PDFを開く）</p>
+                    <img src="./img/icon/chevron-right-solid.svg" alt="">
+                </a>
+                <ul class="concept-album">
+                    <li class="concept-album__item">
+                        <img src="./img/banner/concept_01.jpg" alt="">
+                        <p>ネイチャーガイドと歩く渓流ガイドツアー</p>
+                    </li>
+                    <li class="concept-album__item">
+                        <img src="./img/banner/concept_02.jpg" alt="">
+                        <p>奥入瀬渓流コケさんぽ</p>
+                    </li>
+                    <li class="concept-album__item">
+                        <img src="./img/banner/concept_03.jpg" alt="">
+                        <p>コケ玉づくり体験</p>
+                    </li>
+                    <li class="concept-album__item">
+                        <img src="./img/banner/concept_04.jpg" alt="">
+                        <p>グリスロで楽しむ奥入瀬渓流ネイチャーツアー</p>
+                    </li>
+                    <li class="concept-album__item">
+                        <img src="./img/banner/concept_05.jpg" alt="">
+                        <p>スノーシューツアー</p>
+                    </li>
+                    <li class="concept-album__item">
+                        <img src="./img/banner/concept_06.jpg" alt="">
+                        <p>奥入瀬渓流氷瀑ツアー</p>
+                    </li>
+                </ul>
             </div>
         </section>
         <section data-include="component/relbanner.html"

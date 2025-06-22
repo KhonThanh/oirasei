@@ -29,8 +29,8 @@
     right: 0;
     top: 0;
     z-index: 10;
-    padding: 120px 30px 30px;
-    max-width: 350px;
+    padding: 120px 40px 30px;
+    max-width: 400px;
 
     transform: translateX(100%);
     opacity: 0;
@@ -780,14 +780,15 @@
 }
 
 .hidden-section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 1s ease, transform 1s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out, filter 0.9s ease-out;
+  will-change: opacity, transform, filter;
 }
 
 .show-up {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ===== css website parking ===== */
@@ -1229,30 +1230,56 @@
 }
 
 /* css walking page */
-.content_image img{
+.content_image img {
     aspect-ratio: 1140 / 3396;
     width: 60%;
     height: auto;
 }
 
-.subtitle-img{
+.subtitle-img {
     font-size: var(--font-size-base);
     color: var(--color-blacks);
     padding: 15px;
     margin-bottom: 15px;
 }
 
-.walking_content{
+.walking_content {
     gap: 15px;
     padding: 15px;
 }
 
-.walking_content strong{
+.walking_content strong {
     font-size: calc(var(--font-size-base) + 2px);
 }
 
-.walking-table{
+.walking-table {
     gap: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* css phần menu */
+.custom-scroll {
+    max-height: 680px;
+    overflow-y: auto;
+}
+
+/* Custom scrollbar cho trình duyệt WebKit (Chrome, Safari) */
+.custom-scroll::-webkit-scrollbar {
+    width: 7px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, #43e2c6, #3183d0);
+    border-radius: 3px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Firefox */
+.custom-scroll {
+    scrollbar-color: #3fc1ff transparent;
+    scrollbar-width: thin;
 }
