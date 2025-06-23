@@ -1344,7 +1344,7 @@
     width: inherit;
 }
 
-.concept-content__container > figure > div > img{
+.concept-content__figure >img{
     aspect-ratio: 1440 / 2080;
     width: 100%;
     height: auto;
