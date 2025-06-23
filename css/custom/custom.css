@@ -1272,37 +1272,38 @@
     text-overflow: ellipsis;
 }
 
-.table-content__list p{
+.table-content__list p {
     width: fit-content;
     gap: 10px;
 }
 
-.content_image_second{
+.content_image_second {
     padding: 15px;
     gap: 15px;
 }
 
-.content_image_second img{
+.content_image_second img {
     aspect-ratio: 1366 / 1948;
     width: 60%;
     height: auto;
 }
 
 /* css phần concept */
-.concept-content__container{
+.concept-content__container {
     padding: 15px;
     gap: 15px;
 }
 
 .concept-content__container p,
-.concept-content__container span{
+.concept-content__container span {
     font-size: var(--font-size-base);
 }
 
-.concept-content__container p{
-    font-weight:normal;
+.concept-content__container p {
+    font-weight: normal;
 }
-.concept-content__container span{
+
+.concept-content__container span {
     font-weight: lighter;
 }
 
@@ -1316,16 +1317,16 @@
     white-space: nowrap;
 }
 
-.concept-album{
+.concept-album {
     flex-wrap: wrap;
     gap: 15px 2%;
 }
 
-.concept-album__item{
+.concept-album__item {
     width: calc(100% / 2 - 20px);
 }
 
-.concept-album__item img{
+.concept-album__item img {
     aspect-ratio: 400 / 250;
     width: 100%;
     height: auto;
@@ -1336,26 +1337,26 @@
     color: var(--color-black);
 }
 
-.concept-content__container > table > tbody > tr > td{
+.concept-content__container>table>tbody>tr>td {
     padding: 10px;
 }
 
-.concept-content__container > figure > div{
+.concept-content__container>figure>div {
     width: inherit;
 }
 
-.concept-content__figure >img{
+.concept-content__figure>img {
     aspect-ratio: 1440 / 2080;
     width: 100%;
     height: auto;
 }
 
-.concept-content__container strong{
+.concept-content__container strong {
     margin-bottom: 15px;
 }
 
 .concept-content__figure {
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
 
@@ -1390,45 +1391,45 @@
 }
 
 /* css packing  html*/
-.parking-content{
+.parking-content {
     padding: 15px;
     margin-top: 24px;
 }
 
 .content-noti,
-.parking-content figcaption{
+.parking-content figcaption {
     padding: 15px;
     margin: 5px 0px;
     background-color: var(--background-color-creamy);
 }
 
-.parking-content span{
+.parking-content span {
     color: blue
 }
 
-.parking-content img{
+.parking-content img {
     aspect-ratio: 2472 / 2903;
     width: 100%;
     height: auto;
 }
 
-.parking-content strong{
+.parking-content strong {
     font-weight: 600;
 }
 
-.next-page a{
+.next-page a {
     padding: 0px;
     text-decoration: none !important;
     color: var(--color-black);
 }
 
-.next-page{
+.next-page {
     justify-content: right;
     align-items: center;
     gap: 10px;
 }
 
-#yasumiya-parking{
+#yasumiya-parking {
     color: var(--color-orage);
     font-size: var(--font-size-base);
     display: flex;
@@ -1440,8 +1441,73 @@
     color: var(--color-black);
 }
 
-.busship-top img{
-    aspect-ratio: 2500 / 3000 ;
+.busship-top img {
+    aspect-ratio: 2500 / 3000;
     width: 100%;
     height: auto;
+}
+
+.bus-ship__calender {
+    padding: 15px;
+    gap: 20px;
+}
+
+.calender-infotmation__pdf { 
+    cursor: pointer;
+}
+
+.calender-infotmation__pdf:hover { 
+    opacity: 0.6;
+}
+
+
+.calender-infotmation__pdf img{
+    aspect-ratio: 900 / 508;
+    width: 100%;
+    height: auto;
+}
+
+.bus-ship__item-red p,
+.bus-ship__item-green p{
+    font-size: var(--font-size-base);
+    color: var(--color-black);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bus-ship__item-red span,
+.bus-ship__item-green span{
+    margin-right: 5px;
+}
+
+.bus-ship__item-red span{
+    color:var(--color-red);
+}
+.bus-ship__item-green span{
+    color: var(--color-green);
+}
+
+.bus-ship__item-red p:first-child,
+.bus-ship__item-green p:first-child{
+    background-color: var(--color-blue);
+    padding: 3px;
+    color: var(--color-white);
+    font-weight: bold;
+    margin-bottom: unset !important;
+}
+
+.bus-ship__item-red p:nth-child(2),
+.bus-ship__item-green p:nth-child(2){
+    background-color: var(--color-white);
+    border: 1px solid var(--color-blue);
+    font-weight: bold;
+    padding: 3px;
+}
+
+.bus-ship__calender-footer{
+    font-size: var(--font-size-base);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 48px;
 }
