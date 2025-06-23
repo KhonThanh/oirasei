@@ -13,6 +13,7 @@
 .bg-light-blue {  background-color: var(--color-light-blue); }
 .bg-light-gray { background-color: var(--color-light-gray); }
 .bg-red { background-color: var(--color-red);}
+.bg-white-cream{ background-color: var(--background-color-creamy);}
 
 .rounded {  border-radius: 10px; }
 .rounded-full {  border-radius: 999px; }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eco oirase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body class="flex flex-col  align-center ">
+    <header class=" header-menu">
+        <div class="flex flex-col center icon-bar" onclick="toggleMenu()">
+            <span class="nth-1"></span>
+            <span class="nth-2"></span>
+            <span class="nth-3"></span>
+            <span class="disp_n">×</span>
+        </div>
+    </header>
+    <section class="site-header">
+        <div class="flex site-header__wrapper container-larger">
+            <a href="/index.html" class="logo">
+                <img src="/img/logo/logo.png" alt="" loading="lazy" width="296" height="194">
+            </a>
+            <button class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
+                <span class="nth-1"></span>
+                <span class="nth-2"></span>
+                <span class="nth-3"></span>
+                <span class="disp_n">×</span>
+            </button>
+        </div>
+    </section>
+    <section data-include="component/menu.html" id="mainMenu" class="menu-container"></section>
+    <main class="flex flex-col ">
+        <section class="main-container">
+            <div class="container-small top-banner">
+                <img src="./img/banner/bus-ship-top.jpg" alt="" />
+            </div>
+        </section>
+        <section class="flex flex-col container-exsmall-padding content">
+            <h1>シャトルバス運行/シャトルバス・遊覧船</h1>
+            <h2>シャトルバス運行の目的・背景</h2>
+            <div class="flex flex-col concept-content__container busship-top">
+                <span>
+                    奥入瀬渓流は、わたしたちみんなの財産。
+                    <br>
+                    誰もが等しくその恩恵を受ける権利があります。
+                </span>
+                <p>
+                    しかし、その反面、観光シーズンには車が殺到して、渋滞や環境への影響を引き起こすなどの様々な問題が生じています。また、渓流沿いの国道102号は、もともと地域の生活道路や産業道路としての機能を担っていますが、渓流を迂回する道路は、大型車のすれ違いが困難な状況となっています。
+                </p>
+            </div>
+            <h2>シャトルバス、遊覧船のご利用について</h2>
+            <div class="flex flex-col concept-content__container busship-top">
+                <strong>
+                    マイカー・観光バス等でお越しの方へ
+                </strong>
+                <p class="content-noti">
+                    マイカー交通規制期間は、規制区間への車両の進入はお控えください。
+                    <br>
+                    <strong>奥入瀬渓流へマイカー・観光バス等でお越しの際は、<span>奥入瀬渓流温泉スキー場前駐車場（無料）・休屋駐車場（有料）</span>
+                        に駐車の上、<span>シャトルバス（有料）</span>をご利用ください</strong>
+                </p>
+                <div class="flex next-page">
+                    ▶
+                    <a href="#">シャトルバスの時刻はコチラ</a>
+                </div>
+                <img src="./img/banner/busmap2024.png" alt="">
+            </div>
+            <h2>シャトルバス運賃</h2>
+            <div class="flex flex-col concept-content__container busship-top">
+                <strong>1日フリーパス券　(小学生以下無料)</strong>
+                <strong>大人：1,500円</strong>
+                <br>
+                <div id="yasumiya-parking">
+                    ■
+                    <p>電子チケット販売</p>
+                </div>
+                <a href="https://travel.willer.co.jp/st/3/ja/pc/tour/package/?mcid=57908"  target="_blank">お申込みはこちら</a>
+                <div id="yasumiya-parking">
+                    ■
+                    <p>チケット販売場所</p>
+                </div>
+            </div>
+            <h2>シャトルバス時刻表</h2>
+            <div class="flex flex-col concept-content__container busship-top">
+                <div id="yasumiya-parking">
+                    ■
+                    <p>電子チケット販売</p>
+                </div>
+                <a href="https://travel.willer.co.jp/st/3/ja/pc/tour/package/?mcid=57908"  target="_blank">お申込みはこちら</a>
+                <div id="yasumiya-parking">
+                    ■
+                    <p>チケット販売場所</p>
+                </div>
+            </div>
+        </section>
+        <section data-include="component/relbanner.html"
+            class="relbanner flex center container-larger-padding bg-light-gray"></section>
+    </main>
+    <footer data-include="component/footer.html"></footer>
+    <!-- js slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/frondend.js"></script>
+    <script type="text/javascript" src="./js/backend.js"></script>
+</body>
+
+</html>
