@@ -1306,17 +1306,14 @@
     font-weight: lighter;
 }
 
-.concept-btn__showpdf p{
-    color: var(--color-white);
-    white-space: nowrap;
-}
-
 .concept-btn__showpdf {
     margin-bottom: 48px;
     margin-top: 50px;
     text-decoration: none !important;
     max-width: unset !important;
     width: fit-content;
+    color: var(--color-white) !important;
+    white-space: nowrap;
 }
 
 .concept-album{
@@ -1441,4 +1438,10 @@
 
 #yasumiya-parking p {
     color: var(--color-black);
+}
+
+.busship-top img{
+    aspect-ratio: 2500 / 3000 ;
+    width: 100%;
+    height: auto;
 }
