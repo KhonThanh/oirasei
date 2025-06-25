@@ -3,31 +3,32 @@
   --background-color: #ffffff;
   --background-color-creamy: #eadece;
   --color-light-blue: #aaddf8;
-  --color-red:#e50012;
-  --color-orage:#ff9933;
+  --color-red: #e50012;
+  --color-orage: #ff9933;
   --color-white: #fff;
   --color-light-blue: #95bae4;
   --color-black: #252525;
   --color-green: #42b880;
   --color-medium-green: #83BD35;
-  --color-light-green:#dfdb;
+  --color-light-green: #dfdb;
   --color-dark-green: #3A5735;
+  --color-darker-green: #315a6f;
   --color-gray: #575757;
   --color-light-gray: #f5f5f4;
-  --color-dark-blue:#333399;
-  --color-blue:#3E6EB4;
+  --color-dark-blue: #333399;
+  --color-blue: #3E6EB4;
   --font-size-base: 16px;
   --banner-adv: url(../../img/banner/top-project.webp);
   --banner-con: url(../../img/banner/concept_bn.webp);
-  --font-name:'Noto Sans JP', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif;
+  --font-name: 'Noto Sans JP', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif;
 }
 
-main{
+main {
   position: relative;
   align-items: center;
 }
 
-section{
+section {
   width: 100%;
 }
 
@@ -38,7 +39,7 @@ section{
   caret-color: transparent;
 }
 
-header{
+header {
   position: relative;
   z-index: 1;
 }
@@ -49,12 +50,13 @@ body {
   background-color: var(--background-color);
   width: 100%;
 }
-header{
+
+header {
   position: absolute;
   width: 100%;
-  top:0;
+  top: 0;
   z-index: 4;
-  left:0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -79,6 +81,26 @@ a {
   cursor: pointer;
 }
 
+.text-red__sp>p:first-child {
+  color: var(--color-red);
+  font-weight: bold;
+  font-size: calc(var(--font-size-base) + 20px);
+}
+
+.text-sp_two>p:first-child,
+.text-sp>p:first-child {
+  font-weight: bold;
+  font-size: calc(var(--font-size-base) + 6px);
+}
+
+.text-sp_two>p:first-child{
+  color: var(--color-darker-green);
+}
+
+.text-sp>p:first-child {
+  color: var(--color-light-blue);
+}
+
 .img-config {
   width: 100%;
   height: auto;
@@ -92,13 +114,17 @@ textarea,
   caret-color: auto;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   outline: none;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   border-color: #007bff;
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
 }
@@ -113,7 +139,11 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-td,th,tbody,thead,table{
+td,
+th,
+tbody,
+thead,
+table {
   margin: 0px;
   padding: 0px;
 }
