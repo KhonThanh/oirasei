@@ -1283,3 +1283,18 @@
     scrollbar-color: #3fc1ff transparent;
     scrollbar-width: thin;
 }
+
+/* css custom autonomous */
+
+.autonomous-custom{
+    min-height: 491.17px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.autonomous-custom p{
+    font-size: calc(var(--font-size-base) + 7px);
+    color: var(--color-white);
+    font-weight: bold;
+    text-align: center;
+}
