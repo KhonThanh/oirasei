@@ -27,7 +27,7 @@
             <button class="flex flex-col center icon-bar icon-bar___position" onclick="toggleMenu()">
                 <span class="nth-1"></span>
                 <span class="nth-2"></span>
-                <span class="nth-3"></span>
+                <cspan class="nth-3"></cspan>
                 <span class="disp_n">×</span>
             </button>
         </div>
@@ -43,11 +43,11 @@
             <h1>シャトルバス運行/シャトルバス・遊覧船</h1>
             <h2>シャトルバス運行の目的・背景</h2>
             <div class="flex flex-col concept-content__container busship-top">
-                <span>
+                <p>
                     奥入瀬渓流は、わたしたちみんなの財産。
                     <br>
                     誰もが等しくその恩恵を受ける権利があります。
-                </span>
+                </p>
                 <p>
                     しかし、その反面、観光シーズンには車が殺到して、渋滞や環境への影響を引き起こすなどの様々な問題が生じています。また、渓流沿いの国道102号は、もともと地域の生活道路や産業道路としての機能を担っていますが、渓流を迂回する道路は、大型車のすれ違いが困難な状況となっています。
                 </p>
@@ -57,12 +57,13 @@
                 <strong>
                     マイカー・観光バス等でお越しの方へ
                 </strong>
-                <p class="content-noti">
-                    マイカー交通規制期間は、規制区間への車両の進入はお控えください。
-                    <br>
-                    <strong>奥入瀬渓流へマイカー・観光バス等でお越しの際は、<span>奥入瀬渓流温泉スキー場前駐車場（無料）・休屋駐車場（有料）</span>
-                        に駐車の上、<span>シャトルバス（有料）</span>をご利用ください</strong>
-                </p>
+                <div class="parking-content__note__busship">
+                    <p>マイカー交通規制期間は、規制区間への車両の進入はお控えください。</p>
+                    <p>
+                        奥入瀬渓流へマイカー・観光バス等でお越しの際は、<strong>奥入瀬渓流温泉スキー場前駐車場（無料）・休屋駐車場（有料）</strong>
+                        に駐車の上、<strong>シャトルバス（有料）</strong>をご利用ください
+                    </p>
+                </div>
                 <div class="flex next-page">
                     ▶
                     <a href="#">シャトルバスの時刻はコチラ</a>
@@ -76,13 +77,23 @@
                 <br>
                 <div id="yasumiya-parking">
                     ■
-                    <p>電子チケット販売</p>
+                    <p>Ticket office</p>
                 </div>
-                <a href="https://travel.willer.co.jp/st/3/ja/pc/tour/package/?mcid=57908" target="_blank">お申込みはこちら</a>
-                <div id="yasumiya-parking">
-                    ■
-                    <p>チケット販売場所</p>
+                <div class="flex parking-note__list">
+                    <div class="flex center ">
+                        <img src="/{$templatePath}/{$userTemplate}/img/icon/ico_p1.gif"
+                            alt="">{$locale->msg('parking1')}
+                    </div>
+                    <div class="flex center ">
+                        <img src="/{$templatePath}/{$userTemplate}/img/icon/ico_p2.gif"
+                            alt="">{$locale->msg('parking2')}
+                    </div>
+                    <div class="flex center ">
+                        <img src="/{$templatePath}/{$userTemplate}/img/icon/ico_p5.gif"
+                            alt="">{$locale->msg('parking5')}
+                    </div>
                 </div>
+                <div id="map2"></div>
             </div>
             <h2>シャトルバス時刻表</h2>
             <div class="flex flex-col concept-content__container busship-top">
@@ -97,10 +108,6 @@
                 </strong>
                 <a href="https://travel.willer.co.jp/st/3/ja/pc/tour/package/?mcid=57908"
                     target="_blank">詳細な時刻表はこちら>>>></a>
-                <div id="yasumiya-parking">
-                    ■
-                    <p>チケット販売場所</p>
-                </div>
             </div>
             <strong>平日：１０月21日（月）～25日（金）</strong>
             <a href="#" class="calender-infotmation__pdf">
@@ -116,7 +123,7 @@
                     <p>休　屋⇔子ノ口</p>
                     <p>所要時間：50分</p>
                     <p>十和田湖畔の主要観光地・休屋と、奥入瀬渓流散策の入り口・子ノ口を結ぶコース。中山半島と中の湖、御倉半島の突端を巡ります。</p>
-                    <p><span>■</span>運行時間</p>
+                    <p><strong>■</strong>運行時間</p>
                     <p>
                         休屋→子ノ口
                         <br>
@@ -128,7 +135,7 @@
                     </p>
                     <p> ※詳しい時刻表は以下のサイトよりご確認ください。</p>
                     <p>>>><a href="http://www.toutetsu.co.jp/ship.html" target="_blank">十和田湖遊覧船（十和田観光電鉄）</a></p>
-                    <p><span>■</span>通常運賃</p>
+                    <p><strong>■</strong>通常運賃</p>
                     <p>
                         十和田湖遊覧船（十和田観光電鉄）
                         <br>
@@ -138,7 +145,7 @@
                         <br>
                         （団体割引あり：15名以上～）
                     </p>
-                    <p><span>■</span>お問い合せ（遊覧船）</p>
+                    <p><strong>■</strong>お問い合せ（遊覧船）</p>
                     <p>
                         十和田湖遊覧船運航事務所団体予約センター
                         <br>
@@ -149,7 +156,7 @@
                     <p>休　屋⇔子ノ口</p>
                     <p>所要時間：50分</p>
                     <p>十和田湖畔の主要観光地・休屋と、奥入瀬渓流散策の入り口・子ノ口を結ぶコース。中山半島と中の湖、御倉半島の突端を巡ります。</p>
-                    <p><span>■</span>運行時間</p>
+                    <p><strong>■</strong>運行時間</p>
                     <p>
                         休屋→子ノ口
                         <br>
@@ -161,7 +168,7 @@
                     </p>
                     <p> ※詳しい時刻表は以下のサイトよりご確認ください。</p>
                     <a href="http://www.toutetsu.co.jp/ship.html" target="_blank">十和田湖遊覧船（十和田観光電鉄）</a>
-                    <p><span>■</span>通常運賃</p>
+                    <p><strong>■</strong>通常運賃</p>
                     <p>
                         十和田湖遊覧船（十和田観光電鉄）
                         <br>
@@ -171,7 +178,7 @@
                         <br>
                         （団体割引あり：15名以上～）
                     </p>
-                    <p><span>■</span>お問い合せ（遊覧船）</p>
+                    <p><strong>■</strong>お問い合せ（遊覧船）</p>
                     <p>
                         十和田湖遊覧船運航事務所団体予約センター
                         <br>

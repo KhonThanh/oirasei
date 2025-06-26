@@ -1351,7 +1351,7 @@
 /* css phần concept */
 .concept-content__container {
     padding: 15px;
-    gap: 15px;
+    gap: 10px;
 }
 
 .concept-content__container p,
@@ -1411,9 +1411,9 @@
     height: auto;
 }
 
-.concept-content__container strong {
+/* .concept-content__container strong {
     margin-bottom: 15px;
-}
+} */
 
 .concept-content__figure {
     grid-template-columns: repeat(2, 1fr);
@@ -1456,7 +1456,6 @@
     margin-top: 24px;
 }
 
-.content-noti,
 .parking-content__sp figcaption {
     padding: 15px;
     margin: 5px 0px;
@@ -1472,6 +1471,33 @@
     width: 100%;
     height: auto;
 }
+
+.parking-content__note__busship,
+.parking-content__note {
+    padding: 15px;
+    margin: 5px 0px;
+}
+
+.parking-content__note__busship,
+.parking-content__note{
+     background-color: var(--background-color-creamy);
+}
+
+.parking-content__note__busship p,
+.parking-content__note p{
+    font-size: var(--font-size-base) !important;
+}
+
+.parking-content__note__busship p:last-child,
+.parking-content__note p:last-child{
+    font-weight: bold;
+}
+
+.parking-content__note__busship p > strong,
+.parking-content__note p:last-child > strong{
+    color: var(--color-light-blue);
+}   
+
 
 .parking-content strong {
     font-weight: 600;
@@ -1490,7 +1516,7 @@
 }
 
 #yasumiya-parking {
-    color: var(--color-orage);
+    color: var(--color-green);
     font-size: var(--font-size-base);
     display: flex;
     gap: 10px;
@@ -1505,6 +1531,11 @@
     aspect-ratio: 2500 / 3000;
     width: 100%;
     height: auto;
+}
+
+.busship-top p:first-child{
+    color: var(--color-darker-green);
+    font-weight: bold;
 }
 
 .bus-ship__calender {
@@ -1536,16 +1567,16 @@
     margin-bottom: 20px;
 }
 
-.bus-ship__item-red span,
-.bus-ship__item-green span {
+.bus-ship__item-red strong,
+.bus-ship__item-green strong {
     margin-right: 5px;
 }
 
-.bus-ship__item-red span {
+.bus-ship__item-red strong {
     color: var(--color-red);
 }
 
-.bus-ship__item-green span {
+.bus-ship__item-green strong {
     color: var(--color-green);
 }
 
