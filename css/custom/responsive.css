@@ -6,8 +6,8 @@
     } */
 }
 
-@media (max-width: 1450px){
-    .site-header__wrapper{
+@media (max-width: 1450px) {
+    .site-header__wrapper {
         padding-left: 20px;
     }
 }
@@ -101,20 +101,24 @@
         flex-wrap: wrap;
     }
 
-    .content_image img{
+    .content_image img {
         width: 100%;
     }
 
-    .walking-table{
+    .walking-table {
         flex-direction: column;
     }
 
-    .walking-table img{
+    .walking-table img {
         width: 100%;
     }
 
-    .content_image_second img{
+    .content_image_second img {
         width: 100%;
+    }
+
+    .bus-ship__calender{
+        flex-direction: column;
     }
 }
 
@@ -264,6 +268,10 @@
         padding: 20px 30px 20px 20px;
     }
 
+    .concept-album__item {
+        width: calc(100% - 20px);
+    }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -286,5 +294,9 @@
 
     .rel-banner {
         width: 100%;
+    }
+
+    .concept-btn__showpdf p{
+        white-space: unset;
     }
 }
