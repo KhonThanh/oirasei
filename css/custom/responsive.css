@@ -10,6 +10,16 @@
     .site-header__wrapper {
         padding-left: 20px;
     }
+
+    .about-content{
+        padding-left: unset;
+    }
+
+    .drivingeffort-content > ul,
+    .features-content{
+        padding-right: unset;
+    }
+
 }
 
 @media (max-width: 1440px) and (min-width: 1025px) {
@@ -32,6 +42,52 @@
     .logo,
     .inner {
         left: 10px;
+    }
+
+    .drivingeffort-content{
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .drivingeffort-title__position{
+        padding-left: unset;
+    }
+
+    .realization-content{
+        flex-direction: column;
+    }
+
+    .realization-weakness,
+    .list-container{
+        width: 100%;
+    }
+
+    .realization-weakness__container ul{
+        width: 100%; 
+    }
+
+    .realization-weakness__container ul li{
+        text-align: left !important;
+    }
+
+    .operation-custom__container{
+        flex-wrap: wrap;
+    }
+
+    .custom-container{
+        flex-direction: column-reverse;
+    }
+
+    .custom-container__header{
+        flex-direction: column;
+    }
+
+    .about-content{
+        width: 100%;
+    }
+
+    .about-img{
+        width: 100%;
     }
 }
 
@@ -224,6 +280,10 @@
         width: 100%;
     }
 
+    .detail-driving-space__item{
+        max-width: unset;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -270,6 +330,47 @@
 
     .concept-album__item {
         width: calc(100% - 20px);
+    }
+
+    .custom-container{
+        flex-direction: column-reverse;
+    }
+
+    .custom-container__header{
+        flex-direction: column;
+    }
+
+    .about-content{
+        width: 100%;
+    }
+
+    .about-img{
+        width: 100%;
+    }
+
+    .autonomous-custom p{
+        display: block;
+    }
+
+    .realization-content{
+        flex-direction: column;
+    }
+
+    .list-container,
+    .realization-weakness{
+        width: 100%;
+    }
+
+    .drivingeffort-title__position{
+        padding-left: unset;
+    }
+
+    .drivingeffort-content{
+        flex-direction: column;
+    }
+
+    .item-container, .operation-item, .traffic-item{
+        max-width: 100vw;
     }
 
 }
